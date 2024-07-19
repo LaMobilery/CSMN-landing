@@ -14,7 +14,7 @@ dotenv.config();
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 // Serve static files from the Vue app
-app.use(express.static(path.join(__dirname, 'frontend', 'dist')));
+app.use(express.static(path.join(__dirname, '../csmn_front/dist')));
 
 app.post('/send-mail', async (req, res) => {
     const { name, email, phone, message } = req.body;
