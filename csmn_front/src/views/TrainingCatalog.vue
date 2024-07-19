@@ -1,0 +1,187 @@
+<template>
+  <div class="main-container">
+    <section class="container">
+      <h1>Catalogue des formations</h1>
+      <div class="filters">
+        <div class="filter" @click="filterBy('all')">Toutes</div>
+        <div class="filter" @click="filterBy('discovery')">Découverte</div>
+        <div class="filter" @click="filterBy('advanced')">Plongée avancée</div>
+        <div class="filter" @click="filterBy('other')">Autres activités</div>
+        <div class="filter" @click="filterBy('management')">Encadrement</div>
+      </div>
+
+      <div class="cards">
+        <div v-for="(card, index) in TrainingCardsFiltered">
+          <TrainingCard :key="index"
+                        :title="card.title.toUpperCase()"
+                        :subtitle="card.subtitle"
+                        :text="card.text"
+                        :background-image="card.backgroundImage"
+          />
+        </div>
+      </div>
+
+    </section>
+    <div class="wave-container">
+      <img :src="waveSeparator"/>
+    </div>
+  </div>
+</template>
+
+<script lang="ts" setup>
+import TrainingCard from '@/components/TrainingCard.vue'
+import {ref} from 'vue'
+import waveSeparator from '../../src/assets/waves/training-wave.svg'
+
+const filterBy = (tag: string) => {
+  TrainingCardsFiltered.value = TrainingCards.filter(card => card.tag === tag)
+
+  if (tag === 'all') {
+    TrainingCardsFiltered.value = TrainingCards
+  }
+}
+
+const TrainingCards = [
+  {
+    title: 'Baptême de plongée',
+    subtitle: 'Osez respirer sous l’eau !',
+    text: 'Baptême de plongée Plongez dans l\'aventure et explorez un monde fascinant. Une expérience inoubliable d\'émerveillement et de découverte Les baptêmes de plongée sont organisés en soirée, la semaine à la piscine Marx Dormoy. Baptêmes ouverts à tous à partir de 12 ans. Les participants mineurs doivent présenter une autorisation parentale. Prenez simplement votre équipement de piscine et inscrivez-vous pour participer à l\'activité.',
+    backgroundImage: "'/src/assets/images/formations/Formation-bapteme-de-plongee.jpg'",
+    tag: 'discovery'
+  },
+  {
+    title: 'Niveau 1',
+    subtitle: 'Devenez explorateur des grands fonds !',
+    text: 'Passer votre niveau 1 de plongée vous ouvrira les portes d\'un monde sous-marin extraordinaire. L\'apprentissage de la plongée vous permettra de vivre des expériences uniques de découverte et de détente.',
+    backgroundImage: "'/src/assets/images/formations/Formation-niv1.png'",
+    tag: 'discovery'
+  },
+  {
+    title: 'Niveau 2',
+    subtitle: 'Découvrez l\'autonomie !',
+    text: 'Le niveau 2 marque une progression significative dans votre pratique de la plongée en vous offrant l\'autonomie. De plus, ce niveau, ouvre de nouvelles perspectives pour explorer un monde sous-marin encore plus vaste et captivant.',
+    backgroundImage: "'/src/assets/images/formations/Formation-niv2.png'",
+    tag: 'advanced'
+  },
+  {
+    title: 'Niveau 3',
+    subtitle: 'Plongez en totale autonomie !',
+    text: 'En obtenant ce plus haut niveau de certification en plongée, vous deviendrez un plongeur aguerri et expérimenté capable d\'explorer en toute sécurité des sites sous-marins exceptionnels.',
+    backgroundImage: "'/src/assets/images/formations/Formation-niv3.jpg'",
+    tag: 'advanced'
+  },
+  {
+    title: 'Niveau 4',
+    subtitle: 'Guidez d’autres plongeurs !',
+    text: 'En devenant guide de palanquée, vous aurez la possibilité de partager votre passion et être le leader des aventures sous-marines des autres plongeurs. Grâce aux nombreux encadrants du CSMN, vous pourrez bénéficier d\'un soutien solide et progresser de manière efficace dans la préparation de votre Niveau 4.',
+    backgroundImage: "'/src/assets/images/formations/Formation-niv4.jpg'",
+    tag: 'management'
+  },
+  {
+    title: 'Initiateur',
+    subtitle: 'Transmettez votre savoir !',
+    text: 'Transmettez votre savoir!! Le CSMN propose une formation de qualité pour préparer les candidats à l\'examen d\'initiateur Club.',
+    backgroundImage: "'/src/assets/images/formations/Formation-initiateur.jpg'",
+    tag: 'management'
+  },
+  {
+    title: 'GAZ',
+    subtitle: 'Devenez experts des mélanges gazeux !',
+    text: 'Le CSMN est l\'un des rares clubs de plongée de la région à proposer des formations Nitrox et Nitrox Confirmé.',
+    backgroundImage: "'/src/assets/images/formations/Formation-gaz.jpg'",
+    tag: 'advanced'
+  },
+  {
+    title: 'BIOLOGIE',
+    subtitle: 'Dialoguez avec les poissons !',
+    text: 'Envie de mieux comprendre l\'écosystème marin !!! Le CSMN propose une formation en biologie sous-marine. Cette formation vous permettra d\'apprécier davantage la  diversité de la vie marine que vous rencontrez lors de vos plongées.',
+    backgroundImage: "'/src/assets/images/formations/Formation-biologie.jpg'",
+    tag: 'other'
+  },
+  {
+    title: 'Photo / Video',
+    subtitle: 'Photographiez les couleurs des fonds-marins !',
+    text: 'Capturez vos souvenirs sous-marins.  Le CSMN soutient nos plongeurs photographes et vidéastes à échanger et partager autour de cette passion.',
+    backgroundImage: "'/src/assets/images/formations/Formation-video-photo.jpg'",
+    tag: 'other'
+  },
+  {
+    title: 'Apnée',
+    subtitle: 'Plongez léger !',
+    text: 'Découvrez et explorez ce nouveau monde où le silence règne en maître.',
+    backgroundImage: "'/src/assets/images/formations/Formation-apnee.jpg'",
+    tag: 'other'
+  },
+  {
+    title: 'Tir sur cible',
+    subtitle: '3, 2, 1, Tirez !',
+    text: 'Discipline qui associe habileté, concentration et contrôle de la respiration. Venez profiter des sessions divertissantes de tir sur cible au CSMN.',
+    backgroundImage: "'/src/assets/images/formations/Formation-tir-sur-cible.jpg'",
+    tag: 'other'
+  },
+]
+
+const TrainingCardsFiltered = ref(TrainingCards)
+</script>
+
+<style scoped>
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container{
+  background-color: #67ACDA;
+  padding-right: 0 !important;
+}
+
+.filters {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.filter {
+  background-color: #B3D5EC;
+  padding: 10px;
+  border-radius: 500px;
+  cursor: pointer;
+  margin: 0 .2rem;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.cards::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.card span {
+  font-size: 18px;
+  font-style: italic;
+  color: #FFBF29;
+}
+
+.wave-container {
+  background-color: #67ACDA;
+  position: relative;
+  margin-top: -2rem;
+  z-index: -1;
+  width: 100%;
+  height: 30vh;
+}
+
+.wave-container img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
+
+
+</style>
