@@ -47,7 +47,5 @@ const toggle = () => {
 
 .accordion-content {
   padding: 1rem;
-  border: 1px solid #ccc;
-  border-top: none;
 }
 </style>

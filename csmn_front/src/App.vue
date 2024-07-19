@@ -8,6 +8,7 @@
     <Contact/>
     <Faq/>
     <Footer/>
+    <ScrollToTop/>
   </div>
 </template>
 
@@ -21,6 +22,7 @@ import Map from '@/views/Map.vue'
 import Friendliness from '@/views/Friendliness.vue'
 import Contact from '@/views/Contact.vue'
 import Faq from '@/views/Faq.vue'
+import ScrollToTop from '@/components/ScrollToTop.vue'
 </script>
 
 <style scoped>
