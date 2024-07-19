@@ -25,7 +25,7 @@
         </div>
       </div>
       <div class="form-group">
-        <label for="message">Dites-nous de quoi vous avez besoin...*</label>
+        <label for="message">Dîtes-nous de quoi vous avez besoin...*</label>
         <textarea id="message"  v-model="form.message" required></textarea>
       </div>
       <p class="mandatory-note">* Champ obligatoire</p>
@@ -135,6 +135,13 @@ const submitForm = async () => {
   transform: translateY(-50%);
   color: #B3D6ED;
   font-size: 1.25rem;
+}
+
+textarea {
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+  resize: none;
 }
 
 .mandatory-note {
