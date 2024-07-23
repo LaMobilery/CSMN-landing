@@ -1,19 +1,19 @@
 <template>
   <div class="container">
     <section class="faq">
-      <h1>FAQ</h1>
-      <AccordionItem title="Combien coûte l'adhésion ?">
+      <h1>{{ $t('faq.title') }}</h1>
+      <AccordionItem :title="$t('faq.questions.q1.question')">
         <ul>
-          <li>Plongée :</li>
+          <li>{{ $t('faq.questions.q1.answer1') }}</li>
           <ul>
-            <li>Formation Niveau 1 : 183 €</li>
-            <li>Tout autre niveau ou formation : 140 €</li>
-            <li>Encadrant : 76 €</li>
-            <li>Réduction : mineurs ou étudiant -25 ans : 30 €</li>
-            <li>Réduction famille 2ème membre : 15 €</li>
+            <li>{{ $t('faq.questions.q1.answer2') }}</li>
+            <li>{{ $t('faq.questions.q1.answer3') }}</li>
+            <li>{{ $t('faq.questions.q1.answer4') }}</li>
+            <li>{{ $t('faq.questions.q1.answer5') }}</li>
+            <li>{{ $t('faq.questions.q1.answer6') }}</li>
           </ul>
-          <li>Apnée : 80 €</li>
-          <li>Formule piscine : 46 €</li>
+          <li>{{ $t('faq.questions.q1.answer7') }}</li>
+          <li>{{ $t('faq.questions.q1.answer8') }}</li>
         </ul>
       </AccordionItem>
       <AccordionItem title="Comment se déroule la formation Niveau 1 ?">
@@ -26,8 +26,8 @@
       <AccordionItem title="Comment se déroule la formation en Apnée ?">
         <ul>
           <li>Le club forme au niveau "apnéiste" et "apnéiste confirmé".</li>
-          <li>Vous serez intégré à un groupe de 10 apnéiste (maximum).</li>
-          <li>Votre formation s'étalera en 4 et 6 mois, à raison d'une séance par semaine.</li>
+          <li>Vous serez intégré à un groupe de 10 apnéistes (maximum).</li>
+          <li>Votre formation s'étalera sur 4 et 6 mois, à raison d'une séance par semaine.</li>
         </ul>
       </AccordionItem>
       <AccordionItem title="Puis-je m'inscrire en cours d'année ?">
@@ -50,22 +50,34 @@
       <div class="partner-content">
         <h2>Partenaires</h2>
           <div class="white-background">
-            <img src="@/assets/images/partenaires/FFESSM-Logo-FFESSM-quadri-300x300%201.svg" alt="logo partenaire 1" class="partner-logo">
+            <a href="https://ffessm.fr/" target="_blank">
+              <img src="@/assets/images/partenaires/FFESSM-Logo-FFESSM-quadri-300x300%201.svg" alt="logo partenaire 1" class="partner-logo">
+            </a>
           </div>
           <div class="white-background">
-            <img src="@/assets/images/partenaires/Les-Hauts-de-France-FFESSM-Logo-quadri-300x300.svg" alt="logo partenaire 1" class="partner-logo">
+            <a href="http://www.ffessm-hdf.fr/" target="_blank">
+              <img src="@/assets/images/partenaires/Les-Hauts-de-France-FFESSM-Logo-quadri-300x300.svg" alt="logo partenaire 1" class="partner-logo">
+            </a>
           </div>
           <div class="white-background">
-            <img src="@/assets/images/partenaires/Nord-59-FFESSM-Logo-quadri-300x300.svg" alt="logo partenaire 1" class="partner-logo">
+            <a href="https://www.codep59-ffessm.fr/" target="_blank">
+              <img src="@/assets/images/partenaires/Nord-59-FFESSM-Logo-quadri-300x300.svg" alt="logo partenaire 1" class="partner-logo">
+            </a>
           </div>
           <div class="white-background">
-            <img src="@/assets/images/partenaires/image%20(10)%201.svg" alt="logo partenaire 1" class="partner-logo">
+            <a href="https://guide-centres-plongee.longitude181.org/" target="_blank">
+              <img src="@/assets/images/partenaires/image%20(10)%201.svg" alt="logo partenaire 1" class="partner-logo">
+            </a>
           </div>
           <div class="white-background">
-            <img src="@/assets/images/partenaires/logo-DORIS-V4b_image600.svg" alt="logo partenaire 1" class="partner-logo">
+            <a href="https://doris.ffessm.fr/" target="_blank">
+              <img src="@/assets/images/partenaires/logo-DORIS-V4b_image600.svg" alt="logo partenaire 1" class="partner-logo">
+            </a>
           </div>
           <div class="white-background">
-            <img src="@/assets/images/partenaires/LogoFFESSM_new_cropped.svg" alt="logo partenaire 1" class="partner-logo">
+            <a href="https://www.ffessm.lafont-assurances.com/" target="_blank">
+              <img src="@/assets/images/partenaires/LogoFFESSM_new_cropped.svg" alt="logo partenaire 1" class="partner-logo">
+            </a>
           </div>
       </div>
     </section>

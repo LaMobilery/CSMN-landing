@@ -3,11 +3,11 @@
     <section class="container">
       <h1>Catalogue des formations</h1>
       <div class="filters">
-        <div class="filter" @click="filterBy('all')">Toutes</div>
-        <div class="filter" @click="filterBy('discovery')">Découverte</div>
-        <div class="filter" @click="filterBy('advanced')">Plongée avancée</div>
-        <div class="filter" @click="filterBy('other')">Autres activités</div>
-        <div class="filter" @click="filterBy('management')">Encadrement</div>
+        <div class="filter" @click="filterBy('all')">{{ $t('training.filter.all') }}</div>
+        <div class="filter" @click="filterBy('discovery')">{{ $t('training.filter.discovery') }}</div>
+        <div class="filter" @click="filterBy('advanced')">{{ $t('training.filter.advanced') }}</div>
+        <div class="filter" @click="filterBy('other')">{{ $t('training.filter.other') }}</div>
+        <div class="filter" @click="filterBy('management')">{{ $t('training.filter.management') }}</div>
       </div>
 
       <div class="cards">
@@ -16,8 +16,7 @@
                         :title="card.title.toUpperCase()"
                         :subtitle="card.subtitle"
                         :text="card.text"
-                        :background-image="card.backgroundImage"
-          />
+                        :background-image="card.backgroundImage"/>
         </div>
       </div>
 
@@ -45,7 +44,7 @@ const TrainingCards = [
   {
     title: 'Baptême de plongée',
     subtitle: 'Osez respirer sous l’eau !',
-    text: 'Baptême de plongée Plongez dans l\'aventure et explorez un monde fascinant. Une expérience inoubliable d\'émerveillement et de découverte Les baptêmes de plongée sont organisés en soirée, la semaine à la piscine Marx Dormoy. Baptêmes ouverts à tous à partir de 12 ans. Les participants mineurs doivent présenter une autorisation parentale. Prenez simplement votre équipement de piscine et inscrivez-vous pour participer à l\'activité.',
+    text: 'Plongez dans l\'aventure et explorez un monde fascinant. Une expérience inoubliable d\'émerveillement et de découverte. Les baptêmes de plongée sont organisés en soirée, la semaine à la piscine Marx Dormoy. Baptêmes ouverts à tous à partir de 12 ans. Les participants mineurs doivent présenter une autorisation parentale. Prenez simplement votre équipement de piscine et inscrivez-vous pour participer à l\'activité.',
     backgroundImage: "'/src/assets/images/formations/Formation-bapteme-de-plongee.jpg'",
     tag: 'discovery'
   },
@@ -80,7 +79,7 @@ const TrainingCards = [
   {
     title: 'Initiateur',
     subtitle: 'Transmettez votre savoir !',
-    text: 'Transmettez votre savoir!! Le CSMN propose une formation de qualité pour préparer les candidats à l\'examen d\'initiateur Club.',
+    text: 'Vous souhaitez dispenser des baptêmes ou former au Niveau 1. Le CSMN propose une formation de qualité pour préparer les candidats à l\'examen d\'initiateur Club.',
     backgroundImage: "'/src/assets/images/formations/Formation-initiateur.jpg'",
     tag: 'management'
   },
@@ -101,7 +100,7 @@ const TrainingCards = [
   {
     title: 'Photo / Video',
     subtitle: 'Photographiez les couleurs des fonds-marins !',
-    text: 'Capturez vos souvenirs sous-marins.  Le CSMN soutient nos plongeurs photographes et vidéastes à échanger et partager autour de cette passion.',
+    text: 'Capturez vos souvenirs sous marins. Le CSMN soutient nos plongeurs photographes et vidéastes à échanger et partager autour de cette passion.',
     backgroundImage: "'/src/assets/images/formations/Formation-video-photo.jpg'",
     tag: 'other'
   },

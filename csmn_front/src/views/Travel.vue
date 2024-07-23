@@ -2,86 +2,91 @@
   <section class="travel-section">
     <div class="container">
       <div class="top-content">
-        <h1>Les voyages</h1>
-        <!-- TODO : Retirer ce commentaire pour afficher le bouton youtube -->
-        <!--
+        <h1>{{ $t('travel.title') }}</h1>
         <div class="logo_yt" @click="goToYoutubeChannel">
-          <span>Les vidéos</span>
+          <span>{{ $t('travel.videos') }}</span>
           <img :src="logo_yt">
         </div>
-      -->
       </div>
 
       <div class="travels">
         <div class="image-block">
           <div class="image-container">
-            <img :src="gwada1" alt="photo Guadeloupe" class="image-top">
+            <img :src="gwada1" alt="photo" class="image-top">
             <div class="separator"></div>
-            <img :src="gwada2" alt="photo Guadeloupe" class="image-bottom">
+            <img :src="gwada2" alt="photo" class="image-bottom">
           </div>
 
           <div class="caption">
-            <h3>Guadeloupe</h3>
-            <p>Réserve Cousteau</p>
+            <h3>{{ $t('travel.travel1.title') }}</h3>
+            <p>{{ $t('travel.travel1.description') }}</p>
           </div>
         </div>
 
         <div class="image-block">
           <div class="image-container">
-            <img :src="egypte1" alt="photo Guadeloupe" class="image-top">
+            <img :src="egypte1" alt="photo" class="image-top">
             <div class="separator"></div>
-            <img :src="egypte2" alt="photo Guadeloupe" class="image-bottom">
+            <img :src="egypte2" alt="photo" class="image-bottom">
           </div>
 
           <div class="caption">
-            <h3>Egypte</h3>
-            <p>Croisière et plongée du bord</p>
+            <h3>{{ $t('travel.travel2.title') }}</h3>
+            <p>{{ $t('travel.travel2.description') }}</p>
           </div>
         </div>
 
         <div class="image-block">
           <div class="image-container">
-            <img :src="espagne1" alt="photo Guadeloupe" class="image-top">
+            <img :src="espagne1" alt="photo" class="image-top">
             <div class="separator"></div>
-            <img :src="espagne2" alt="photo Guadeloupe" class="image-bottom">
+            <img :src="espagne2" alt="photo" class="image-bottom">
           </div>
 
           <div class="caption">
-            <h3>Espagne</h3>
-            <p>Estartit îles Medes</p>
+            <h3>{{ $t('travel.travel3.title') }}</h3>
+            <p>{{ $t('travel.travel3.description') }}</p>
           </div>
         </div>
 
         <div class="image-block">
           <div class="image-container">
-            <img :src="bretagne1" alt="photo Guadeloupe" class="image-top">
+            <img :src="bretagne1" alt="photo" class="image-top">
             <div class="separator"></div>
-            <img :src="bretagne2" alt="photo Guadeloupe" class="image-bottom">
+            <img :src="bretagne2" alt="photo" class="image-bottom">
           </div>
 
           <div class="caption">
-            <h3>Bretagne</h3>
-            <p>Tombants et épaves</p>
+            <h3>{{ $t('travel.travel4.title') }}</h3>
+            <p>{{ $t('travel.travel4.description') }}</p>
           </div>
         </div>
       </div>
     </div>
   </section>
+  <div class="waves">
+    <img :src="wave1" class="wave wave1">
+    <img :src="wave2" class="wave wave2">
+    <img :src="wave3" class="wave wave3">
+  </div>
 </template>
 
 <script lang="ts" setup>
 import gwada1 from '@/assets/images/voyages/Voyage-Guadeloupe1.png';
-import gwada2 from '@/assets/images/voyages/Voyage-Guadeloupe2.png';
-import bretagne1 from '@/assets/images/voyages/Voyage-Bretagne1.jpg';
-import bretagne2 from '@/assets/images/voyages/Voyage-Bretagne2.jpg';
+import gwada2 from '@/assets/images/voyages/Voyage-Guadeloupe2.jpg';
+import bretagne1 from '@/assets/images/voyages/Bretagne1.jpeg';
+import bretagne2 from '@/assets/images/voyages/Bretagne2.jpeg';
 import egypte1 from '@/assets/images/voyages/Voyage-Egypte1.jpg';
 import egypte2 from '@/assets/images/voyages/Voyage-Egypte2.jpg';
 import espagne1 from '@/assets/images/voyages/Voyage-Espagne1.jpg';
-import espagne2 from '@/assets/images/voyages/Voyage-Espagne2.jpg';
+import espagne2 from '@/assets/images/voyages/Voyage-Espagne2.png';
 import logo_yt from '@/assets/icons/logo_yt.png';
+import wave1 from '@/assets/waves/wave1.svg'
+import wave2 from '@/assets/waves/wave2.svg'
+import wave3 from '@/assets/waves/wave3.svg'
 
 const goToYoutubeChannel = () => {
-  window.open('https://www.youtube.com/', '_blank');
+  window.open('https://www.youtube.com/playlist?list=PLnzBg8pBqF1y0xTaS7tIcsfgtUzqfEAvs', '_blank');
 }
 </script>
 
@@ -105,7 +110,6 @@ h1 {
   border-radius: 1000px;
 }
 
-/* add hover effect to logo yt */
 .logo_yt:hover {
   background-color: #1c2e4a;
 }
@@ -141,7 +145,7 @@ h1 {
 .image-bottom {
   display: block;
   width: 100%;
-  height: 300px;
+  height: 350px;
 }
 
 img {
@@ -170,5 +174,32 @@ img {
   margin: 0;
   color: #FFBF29;
   font-size: 1rem;
+}
+
+.waves {
+  position: relative;
+  width: 100%;
+  height: 25vh;
+  z-index: -1;
+}
+
+.wave {
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
+
+.wave1 {
+  bottom: 0;
+  z-index: 1;
+}
+
+.wave2 {
+  bottom: 0;
+  width: 100%;
+}
+
+.wave3 {
+  bottom: 0;
 }
 </style>

@@ -4,7 +4,7 @@
          :class="{ active: activeButton === 'phone' }"
          @click="handleActiveButton('phone')">
       <img :src="phone" alt="bouton telephone">
-      <div v-if="activeButton === 'phone'" class="info">06 12 34 56 78</div>
+      <div v-if="activeButton === 'phone'" class="info">{{$t('infoContact.phoneNumber')}}</div>
     </div>
 
     <div class="contact-button"
@@ -12,7 +12,7 @@
         @click="handleActiveButton('mail')"
     >
       <img :src="mail" alt="bouton mail">
-      <span v-if="activeButton === 'mail'" class="info">contact@example.com</span>
+      <span v-if="activeButton === 'mail'" class="info">{{$t('infoContact.email')}}</span>
     </div>
     <div
         class="contact-button"
@@ -20,7 +20,7 @@
         @click="handleActiveButton('messenger')"
     >
       <img :src="messenger" alt="bouton messenger">
-      <span v-if="activeButton === 'messenger'" class="info">Messenger ID</span>
+      <span v-if="activeButton === 'messenger'" class="info">{{$t('infoContact.messenger')}}</span>
     </div>
     <div
         class="contact-button"
@@ -28,7 +28,7 @@
         @click="handleActiveButton('whatsapp')"
     >
       <img :src="whatsapp" alt="bouton whatsapp">
-      <span v-if="activeButton === 'whatsapp'" class="info">06 12 34 56 78</span>
+      <span v-if="activeButton === 'whatsapp'" class="info">{{$t('infoContact.whatsapp')}}</span>
     </div>
   </div>
 </template>

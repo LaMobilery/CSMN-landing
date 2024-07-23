@@ -1,34 +1,33 @@
 <template>
   <section class="contact">
     <div class="left-block">
-      <h2>Venez nous rencontrer !</h2>
+      <h2>{{$t('contact.title')}}</h2>
       <div class="flex-row">
           <img :src="mapCsmn" alt="Carte du CSMN" />
           <div class="address">
-            <h3>Club Sous Marin du Nord</h3>
+            <h3>{{$t('contact.csmn')}}</h3>
             <span>
-              Piscine Marx Dormoy
+              {{$t('contact.address.line1')}}
               <br>
-              36 Avenue Marx Dormoy
+              {{$t('contact.address.line2')}}
               <br>
-              59000 Lille
+              {{$t('contact.address.line3')}}
             </span>
           </div>
       </div>
 
       <p>
-        Rencontrez les membres du club avant les entrainements en piscine chaque
+        {{$t('contact.schedule.line1')}}
         <strong>
-        mardi, jeudi et vendredi de 19h30 à 20h15 au local du club.
+          {{$t('contact.schedule.line2')}}
         </strong>
       </p>
       <p>
-        Pour accéder au club, dirigez vous vers la droite de l'escalier en béton qui est
-        visible depuis le parking de la Piscine Marx Dormoy.
+        {{$t('contact.access')}}
       </p>
 
       <div class="contact-us">
-        <h2>Contactez-nous</h2>
+        <h2> {{$t('contact.contactUs')}}</h2>
         <InfoContact/>
       </div>
     </div>

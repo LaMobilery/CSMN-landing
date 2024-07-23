@@ -2,18 +2,18 @@
   <section class="about">
     <div class="flex-row">
       <div class="left-block">
-        <h1>Club de plongée actif et dynamique</h1>
-        <p class="info">Fondé en 1957, le Club Sous-Marin du Nord est une référence incontournable pour les passionnés de plongée. Bénéficiez de formations de qualité, de sorties hebdomadaires passionnantes et de voyages inoubliables. Le tout dans une ambiance conviviale qui fait toute la différence !</p>
+        <h1>{{$t('about.title')}}</h1>
+        <p class="info">{{$t('about.description')}}</p>
       </div>
       <div class="right-block">
           <Carousel/>
       </div>
     </div>
     <div class="bottom-block">
-      <p class="ready">Prêt à plonger dans l'aventure de CSMN ?</p>
+      <p class="ready">{{$t('about.ready')}}</p>
         <a :href="pdfUrl" target="_blank">
           <img :src="download" alt="bouton téléchargement">
-          Téléchargez le dossier d'inscription
+          {{$t('about.download')}}
         </a>
     </div>
   </section>

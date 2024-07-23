@@ -7,7 +7,7 @@
           class="carousel-item"
           :class="{ active: index === currentSlide, prev: index === previousSlide }"
       >
-        <img :src="slide.image" :alt="slide.caption">
+        <img :src="slide.image" alt="photo club">
       </div>
     </div>
     <div class="carousel-indicators">
@@ -25,13 +25,15 @@
 <script setup>
 import {onMounted, onUnmounted, ref} from 'vue'
 import photo1 from '@/assets/images/about/Club-dynamique1.jpg';
-import photo2 from '@/assets/images/about/Club-dynamique2.jpg';
-import photo3 from '@/assets/images/about/Club-dynamique3.jpg';
+import photo2 from '@/assets/images/about/Club-dynamique2.jpeg';
+import photo3 from '@/assets/images/about/Club-dynamique3.jpeg';
+import photo4 from '@/assets/images/about/Club-dynamique4.jpg';
 
 const slides = ref([
-  { image: photo1, caption: 'Slide 1' },
-  { image: photo2, caption: 'Slide 2' },
-  { image: photo3, caption: 'Slide 3' },
+  { image: photo1},
+  { image: photo2 },
+  { image: photo3 },
+  { image: photo4 },
 ]);
 
 const slideInterval = 5000
@@ -55,7 +57,6 @@ onMounted(() => {
 onUnmounted(() => {
   clearInterval(nextSlide);
 });
-
 </script>
 
 <style scoped>

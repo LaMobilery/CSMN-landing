@@ -5,14 +5,13 @@
 
       <button class="member-button" @click="goToMemberSite()">
         <img :src="calendar" alt="logo calendrier">
-        Espaces membres
+        Espace membres
       </button>
 
       <div class="content">
-        <h1>Club sous-Marin du Nord</h1>
-        <h2>DES EXPÉRIENCES UNIQUES <br> TOUTES LES SEMAINES</h2>
-        <p>Venez plonger avec nous <br> au sein de notre club a Lille</p>
-
+        <h1>{{$t('home.title')}}</h1>
+        <h2>{{$t('home.expUnique')}} <br> {{$t('home.allWeek')}}</h2>
+        <p>{{$t('home.comeWithUs')}} <br> {{$t('home.inTheClub')}}</p>
         <div class="contact-icons">
           <InfoContact/>
         </div>

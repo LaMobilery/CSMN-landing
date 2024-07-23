@@ -1,0 +1,96 @@
+{
+  "home": {
+    "title": "Club Sous-Marin du Nord",
+    "expUnique": "DES EXPÉRIENCES UNIQUES",
+    "allWeek": "TOUTES LES SEMAINES",
+    "comeWithUs": "Venez plonger avec nous",
+    "inTheClub": "au sein de notre club à Lille"
+  },
+  "infoContact" : {
+    "phoneNumber": "07 57 84 46 46",
+    "email": "contact@plongee-lille.fr",
+    "messenger": "Messenger",
+    "whatsapp": "07 57 84 46 46"
+  },
+  "about": {
+    "title": "Club de plongée actif et dynamique",
+    "description": "Fondé en 1957, le Club Sous-Marin du Nord est une référence incontournable pour les passionnés de plongée. Bénéficiez de formations de qualité, de sorties hebdomadaires passionnantes et de voyages inoubliables. Le tout dans une ambiance conviviale qui fait toute la différence !",
+    "ready": "Prêt à plonger dans l'aventure de CSMN ?",
+    "download": "Téléchargez le dossier d'inscription"
+  },
+  "training": {
+    "filter": {
+      "all": "Toutes",
+      "discovery": "Découverte",
+      "advanced": "Plongée avancée",
+      "other": "Autres activités",
+      "management": "Encadrement"
+    }
+  },
+  "travel": {
+    "title": "Les voyages",
+    "videos": "Les vidéos",
+    "travel1": {
+      "title": "Guadeloupe",
+      "description": "Réserve Cousteau"
+    },
+    "travel2": {
+      "title": "Egypte",
+      "description": "Croisière et plongée du bord"
+    },
+    "travel3": {
+      "title": "Espagne",
+      "description": "Estartit îles Medes"
+    },
+    "travel4": {
+      "title": "Bretagne",
+      "description": "Tombants et épaves"
+    }
+  },
+  "friendliness": {
+    "title": "La convivialité"
+  },
+  "contact": {
+    "title": "Venez nous rencontrer !",
+    "csmn": "Club Sous-Marin du Nord",
+    "address": {
+        "line1": "Piscine Marx Dormoy",
+        "line2": "36 Avenue Marx Dormoy",
+        "line3": "59000 Lille"
+        },
+    "schedule": {
+        "line1": "Rencontrez les membres du club avant les entrainements en piscine chaque",
+        "line2": "mardi, jeudi et vendredi de 19h30 à 20h15 au local du club."
+    },
+    "access": "Pour accéder au club, dirigez vous vers la droite de l'escalier en béton qui est visible depuis le parking de la Piscine Marx Dormoy.",
+    "contactUs": "Contactez-nous"
+  },
+  "faq": {
+    "title": "FAQ",
+    "questions": {
+      "q1": {
+        "question": "Combien coûte l'adhésion ?",
+        "answer1": "Plongée :",
+        "answer2": "Formation Niveau 1 : 183 €",
+        "answer3": "Tout autre niveau ou formation : 140 €",
+        "answer4": "Encadrant : 76 €",
+        "answer5": "Réduction (non cumulable) : mineurs ou étudiant -25 ans : 30 €",
+        "answer6": "Réduction (non cumulable) famille 2ème membre : 15 €",
+        "answer7": "Apnée : 80 €",
+        "answer8": "Formule piscine : 46 €"
+      },
+      "q2": {
+        "question": "Quels sont les tarifs d'inscription ?",
+        "answer": "Les tarifs d'inscription varient en fonction de la formule choisie. Pour plus d'informations, contactez-nous."
+      },
+      "q3": {
+        "question": "Quels sont les équipements nécessaires pour plonger ?",
+        "answer": "Pour plonger, vous aurez besoin d'un masque, d'un tuba, de palmes, d'une combinaison, d'un gilet stabilisateur, d'un détendeur et d'une bouteille d'air."
+      },
+      "q4": {
+        "question": "Quels sont les niveaux de plongée proposés ?",
+        "answer": "Le club propose des formations pour tous les niveaux, du débutant au confirmé."
+      }
+    }
+  }
+}
