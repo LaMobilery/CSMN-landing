@@ -51,32 +51,32 @@
         <h2>Partenaires</h2>
           <div class="white-background">
             <a href="https://ffessm.fr/" target="_blank">
-              <img src="@/assets/images/partenaires/FFESSM-Logo-FFESSM-quadri-300x300%201.svg" alt="logo partenaire 1" class="partner-logo">
+              <img src="@/assets/images/partenaires/FFESSM-Logo.svg" alt="logo partenaire 1" class="partner-logo">
             </a>
           </div>
           <div class="white-background">
             <a href="http://www.ffessm-hdf.fr/" target="_blank">
-              <img src="@/assets/images/partenaires/Les-Hauts-de-France-FFESSM-Logo-quadri-300x300.svg" alt="logo partenaire 1" class="partner-logo">
+              <img src="../assets/images/partenaires/Les-Hauts-de-France-FFESSM.svg" alt="logo partenaire 1" class="partner-logo">
             </a>
           </div>
           <div class="white-background">
             <a href="https://www.codep59-ffessm.fr/" target="_blank">
-              <img src="@/assets/images/partenaires/Nord-59-FFESSM-Logo-quadri-300x300.svg" alt="logo partenaire 1" class="partner-logo">
+              <img src="../assets/images/partenaires/Nord-59-FFESSM.svg" alt="logo partenaire 1" class="partner-logo">
             </a>
           </div>
           <div class="white-background">
             <a href="https://guide-centres-plongee.longitude181.org/" target="_blank">
-              <img src="@/assets/images/partenaires/image%20(10)%201.svg" alt="logo partenaire 1" class="partner-logo">
+              <img src="@/assets/images/partenaires/longitude.svg" alt="logo partenaire 1" class="partner-logo">
             </a>
           </div>
           <div class="white-background">
             <a href="https://doris.ffessm.fr/" target="_blank">
-              <img src="@/assets/images/partenaires/logo-DORIS-V4b_image600.svg" alt="logo partenaire 1" class="partner-logo">
+              <img src="../assets/images/partenaires/logo-DORIS.svg" alt="logo partenaire 1" class="partner-logo">
             </a>
           </div>
           <div class="white-background">
             <a href="https://www.ffessm.lafont-assurances.com/" target="_blank">
-              <img src="@/assets/images/partenaires/LogoFFESSM_new_cropped.svg" alt="logo partenaire 1" class="partner-logo">
+              <img src="../assets/images/partenaires/LogoFFESSM.svg" alt="logo partenaire 1" class="partner-logo">
             </a>
           </div>
       </div>

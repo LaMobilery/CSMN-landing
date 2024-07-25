@@ -36,9 +36,17 @@
       <ContactForm/>
     </div>
   </section>
+  <div class="waves">
+    <img :src="wave1" class="wave wave1">
+    <img :src="wave2" class="wave wave2">
+    <img :src="wave3" class="wave wave3">
+  </div>
 </template>
 
 <script lang="ts" setup>
+import wave1 from '@/assets/waves/wave10.svg'
+import wave2 from '@/assets/waves/wave11.svg'
+import wave3 from '@/assets/waves/wave12.svg'
 import mapCsmn from '@/assets/images/map_csmn.svg'
 import InfoContact from '@/components/InfoContact.vue'
 import ContactForm from '@/components/ContactForm.vue'
@@ -49,8 +57,6 @@ import ContactForm from '@/components/ContactForm.vue'
   background-color: #1C3052;
   display: flex;
   flex-direction: row;
-  padding: 20px;
-  border-radius: 16px 16px 0 0; /* Pour arrondir les coins du bloc principal */
 }
 
 .left-block {
@@ -60,6 +66,7 @@ import ContactForm from '@/components/ContactForm.vue'
 
 .contact-us {
   margin-top: 2rem;
+  z-index: 100;
 }
 
 .right-block {
@@ -94,5 +101,33 @@ h2 {
   font-size: 32px;
   font-weight: 700;
   color: #B3D6ED;
+}
+
+.waves {
+  position: relative;
+  width: 100%;
+  height: 30vh;
+  background-color: #1C3052;
+}
+
+.wave {
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
+
+.wave1 {
+  bottom: 0;
+  z-index: 1;
+}
+
+.wave2 {
+  bottom: 0;
+  width: 100%;
+}
+
+.wave3 {
+  bottom: 0;
+  z-index: 10;
 }
 </style>

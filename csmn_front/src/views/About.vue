@@ -11,6 +11,10 @@
     </div>
     <div class="bottom-block">
       <p class="ready">{{$t('about.ready')}}</p>
+      <div class="logo_yt" @click="goToYoutubeChannel">
+        <span>Club Sous-Marin du Nord</span>
+        <img :src="logo_yt">
+      </div>
         <a :href="pdfUrl" target="_blank">
           <img :src="download" alt="bouton téléchargement">
           {{$t('about.download')}}
@@ -31,9 +35,33 @@ import pdfUrl from '@/assets/pdf/Dossier-Inscription-CSMN-2024-2025.pdf'
 import wave1 from '@/assets/waves/wave1.svg'
 import wave2 from '@/assets/waves/wave2.svg'
 import wave3 from '@/assets/waves/wave3.svg'
+import logo_yt from '@/assets/icons/logo_yt.png';
+
+const goToYoutubeChannel = () => {
+  window.open('https://www.youtube.com/@CLUBSOUS-MARINDUNORD/community', '_blank');
+}
 </script>
 
 <style scoped>
+.logo_yt {
+  color: #fff !important;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background-color: #263D63;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  border-radius: 1000px;
+  margin-bottom: 1rem;
+}
+
+.logo_yt:hover {
+  background-color: #1c2e4a;
+}
+
+.logo_yt span {
+  padding: 0 1rem;
+  border-radius: 1000px;
+}
 
 .about {
   margin-top: 3rem;

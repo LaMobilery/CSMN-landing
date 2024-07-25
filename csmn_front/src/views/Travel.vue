@@ -72,18 +72,18 @@
 </template>
 
 <script lang="ts" setup>
-import gwada1 from '@/assets/images/voyages/Voyage-Guadeloupe1.png';
-import gwada2 from '@/assets/images/voyages/Voyage-Guadeloupe2.jpg';
-import bretagne1 from '@/assets/images/voyages/Bretagne1.jpeg';
-import bretagne2 from '@/assets/images/voyages/Bretagne2.jpeg';
-import egypte1 from '@/assets/images/voyages/Voyage-Egypte1.jpg';
-import egypte2 from '@/assets/images/voyages/Voyage-Egypte2.jpg';
-import espagne1 from '@/assets/images/voyages/Voyage-Espagne1.jpg';
-import espagne2 from '@/assets/images/voyages/Voyage-Espagne2.png';
+import gwada1 from '@/assets/images/voyages/Voyage1.png';
+import gwada2 from '@/assets/images/voyages/Voyage2.jpg';
+import bretagne1 from '@/assets/images/voyages/Voyage7.jpeg';
+import bretagne2 from '@/assets/images/voyages/Voyage8.jpeg';
+import egypte1 from '@/assets/images/voyages/Voyage3.jpg';
+import egypte2 from '@/assets/images/voyages/Voyage4.jpg';
+import espagne1 from '@/assets/images/voyages/Voyage5.jpg';
+import espagne2 from '@/assets/images/voyages/Voyage6.png';
 import logo_yt from '@/assets/icons/logo_yt.png';
-import wave1 from '@/assets/waves/wave1.svg'
-import wave2 from '@/assets/waves/wave2.svg'
-import wave3 from '@/assets/waves/wave3.svg'
+import wave1 from '@/assets/waves/wave4.svg'
+import wave2 from '@/assets/waves/wave5.svg'
+import wave3 from '@/assets/waves/wave6.svg'
 
 const goToYoutubeChannel = () => {
   window.open('https://www.youtube.com/playlist?list=PLnzBg8pBqF1y0xTaS7tIcsfgtUzqfEAvs', '_blank');
@@ -134,6 +134,7 @@ h1 {
   color: white;
   text-align: center;
   margin: 0 2rem;
+  z-index: 2;
 }
 
 .image-container {
@@ -178,9 +179,10 @@ img {
 
 .waves {
   position: relative;
+  background-color: #1C3052;
   width: 100%;
   height: 25vh;
-  z-index: -1;
+  z-index: 1;
 }
 
 .wave {

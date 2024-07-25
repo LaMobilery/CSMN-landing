@@ -41,6 +41,7 @@
 <script setup>
 import { ref } from 'vue';
 import axios from 'axios';
+import LatestFacebookPost from '@/components/LatestFacebookPost.vue'
 
 const snackbar = ref(false);
 const snackMessage = ref('');
@@ -80,7 +81,6 @@ const submitForm = async () => {
 .contact-form {
   background-color: #1C3052;
   padding: 2rem;
-  border-radius: 10px;
   max-width: 600px;
   margin: 0 auto;
   color: #B3D6ED;

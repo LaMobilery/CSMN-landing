@@ -16,11 +16,25 @@
               @click="changePhoto(index)"
           >
             <img
-                v-if="index !== currentPhotoIndex"
                 :src="photo">
           </div>
         </div>
       </div>
+
+      <div>
+
+      <LatestFacebookPost
+          :pageUrl="facebookPageUrl"
+          pageName="Tours Shooting Stars"
+      />
+        <div>
+          <span>Suivez-nous sur : </span>
+          <img :src="insta">
+          <img :src="yt" @click="goToYoutubeChannel">
+        </div>
+      </div>
+
+
     </div>
 
   </section>
@@ -37,33 +51,45 @@ import photo1 from '@/assets/images/convivialite/Convivialite1.jpeg'
 import photo2 from '@/assets/images/convivialite/Convivialite2.jpeg'
 import photo3 from '@/assets/images/convivialite/Convivialite3.jpeg'
 import photo4 from '@/assets/images/convivialite/Convivialite4.jpeg'
-import wave1 from '@/assets/waves/wave1.svg'
-import wave2 from '@/assets/waves/wave2.svg'
-import wave3 from '@/assets/waves/wave3.svg'
+import wave1 from '@/assets/waves/wave7.svg'
+import wave2 from '@/assets/waves/wave8.svg'
+import wave3 from '@/assets/waves/wave9.svg'
+import insta from '@/assets/icons/insta.svg'
+import yt from '@/assets/icons/logo_yt.png'
+import LatestFacebookPost from '@/components/LatestFacebookPost.vue'
 
 const photos = ref([photo1, photo2, photo3, photo4])
 
 const currentPhotoIndex = ref(0)
-const facebookPageUrl = 'https://www.facebook.com/ClubSousMarinNord';
+const facebookPageUrl = 'https://www.facebook.com/shootingstarsroller';
+const goToYoutubeChannel = () => {
+  window.open('https://www.youtube.com/@CLUBSOUS-MARINDUNORD/community', '_blank');
+}
 
 const changePhoto = (index) => {
   currentPhotoIndex.value = index
 }
 
+const isFBLoaded = ref(false)
+
 onMounted(() => {
-  // Load the Facebook SDK
-  if (window.FB) {
-    window.FB.XFBML.parse();
-  } else {
-    (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-  }
-});
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '867996038524066',
+      xfbml      : true,
+      version    : 'v17.0'
+    });
+    isFBLoaded.value = true
+  };
+
+  (function(d, s, id){
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) {return;}
+    js = d.createElement(s); js.id = id;
+    js.src = "https://connect.facebook.net/fr_FR/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+})
 
 </script>
 
@@ -131,13 +157,10 @@ h1 {
   transform: scale(1.1);
 }
 
-.active {
+.thumbnail .active {
   display: none;
 }
 
-.facebook-widget {
-  flex: 1;
-}
 .waves {
   position: relative;
   width: 100%;
@@ -163,5 +186,6 @@ h1 {
 
 .wave3 {
   bottom: 0;
+  z-index: -10;
 }
 </style>
