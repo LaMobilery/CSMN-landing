@@ -27,7 +27,7 @@ app.post('/send-mail', async (req, res) => {
     try {
         const response = await resend.emails.send({
             from: "Acme <onboarding@resend.dev>",
-            to: ["crenouleau@keyneosoft.fr"],
+            to: ["contact@plongee-lille.fr"],
             subject: 'Formulaire de contact CSMN',
             text: `Nom: ${name}\nEmail: ${email}\nTéléphone: ${phone}\nMessage: ${message}`
         });

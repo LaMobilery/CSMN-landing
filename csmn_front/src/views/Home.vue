@@ -224,7 +224,6 @@ const goToMemberSite = () => {
 
   .contact-icons {
     margin-top: 9rem;
-
   }
 
   .logo {
