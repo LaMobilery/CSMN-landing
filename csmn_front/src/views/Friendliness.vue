@@ -84,7 +84,6 @@ h1 {
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 20px;
-  margin-top: -1.5rem;
 }
 
 .content {
@@ -193,6 +192,8 @@ h1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  margin-top: -2rem;
 }
 
 .social-media {

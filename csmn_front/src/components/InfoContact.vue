@@ -4,7 +4,7 @@
          :class="{ active: activeButton === 'phone' }"
          @click="handleActiveButton('phone')">
       <img :src="phone" alt="bouton telephone">
-      <div v-if="activeButton === 'phone'" class="info">{{$t('infoContact.phoneNumber')}}</div>
+      <span v-if="activeButton === 'phone'" class="info">{{$t('infoContact.phoneNumber')}}</span>
     </div>
 
 <!--    <div class="contact-button"-->
