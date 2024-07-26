@@ -198,7 +198,10 @@ h1 {
 .social-media {
   display: flex;
   align-items: center;
-  cursor: pointer;
+  color: #fff;
+  padding: .5rem;
+  border-radius: 5000px;
+  background-color: #1C3052;
 }
 
 .social-media img {
