@@ -179,6 +179,10 @@ textarea {
   z-index: 1000;
 }
 
+#message {
+    font-size: 20px;
+}
+
 /* Animation de fondu */
 .fade-enter-active, .fade-leave-active {
   transition: opacity 0.5s;
