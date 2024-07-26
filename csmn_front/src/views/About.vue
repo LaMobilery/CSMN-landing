@@ -115,7 +115,6 @@ h1 {
   color: #1C3052;
   font-size: 20px;
   font-weight: 600;
-  margin-left: 1rem;
   cursor: pointer;
   display: flex;
   text-decoration: underline;
