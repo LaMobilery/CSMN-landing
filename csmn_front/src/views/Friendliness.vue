@@ -72,6 +72,7 @@ h1 {
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 20px;
+  margin-top: -1.5rem;
 }
 
 .content {
