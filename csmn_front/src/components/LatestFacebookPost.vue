@@ -33,7 +33,6 @@ const props = defineProps({
 })
 
 onMounted(() => {
-  // Réinitialisez le plugin Facebook après le montage du composant
   if (window.FB) {
     window.FB.XFBML.parse()
   }

@@ -59,10 +59,7 @@ import LatestFacebookPost from '@/components/LatestFacebookPost.vue'
 const photos = ref([photo1, photo2, photo3, photo4])
 
 const currentPhotoIndex = ref(0)
-const facebookPageUrl = 'https://www.facebook.com/shootingstarsroller';
-const goToYoutubeChannel = () => {
-  window.open('https://www.youtube.com/@CLUBSOUS-MARINDUNORD/community', '_blank');
-}
+const facebookPageUrl = 'https://www.facebook.com/ClubSousMarinDuNord';
 
 const changePhoto = (index) => {
   currentPhotoIndex.value = index
