@@ -38,6 +38,7 @@ onUnmounted(() => {
   background-color: #1C3052;
   color: #fff;
   border: none;
+  z-index: 1000;
   border-radius: 50%;
   width: 70px;
   height: 70px;

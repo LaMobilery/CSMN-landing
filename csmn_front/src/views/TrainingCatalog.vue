@@ -225,4 +225,18 @@ const TrainingCardsFiltered = ref(TrainingCards)
 }
 
 
+@media(max-width: 768px) {
+  .filters {
+    display: none;
+  }
+
+  .logo_yt {
+    display: none;
+  }
+
+  .wave-container {
+    display: none;
+  }
+}
+
 </style>

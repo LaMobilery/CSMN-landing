@@ -127,38 +127,6 @@ const goToMemberSite = () => {
   font-weight: 500;
 }
 
-@media (max-width: 768px) {
-  .content h1 {
-    font-size: 1rem;
-  }
-
-  .content h2 {
-    font-size: 1.1rem;
-  }
-
-  .content p {
-    font-size: .9rem;
-  }
-
-  .logo {
-    width: 3rem;
-    top: 10px;
-    left: 10px;
-    border: 5px solid #fff;
-  }
-
-  .member-button {
-    top: 10px;
-    right: 10px;
-    padding: 5px 10px;
-    font-size: .2rem;
-  }
-
-  .member-button img {
-    margin-right: 5px;
-  }
-}
-
 .contact-icons {
   display: flex;
   justify-content: center;
@@ -200,7 +168,7 @@ const goToMemberSite = () => {
   position: absolute;
   bottom: 7px;
   width: 100%;
-  height:15vh;
+  height:20vh;
   margin-bottom:-7px;
   min-height:100px;
   max-height:150px;
@@ -241,10 +209,37 @@ const goToMemberSite = () => {
 }
 
 @media (max-width: 768px) {
-  .waves {
-    height:40px;
-    min-height:40px;
+  .content h1 {
+    font-size: 1.5rem;
+  }
+
+  .content h2 {
+    font-size: 2rem;
+    margin-bottom: 6rem;
+  }
+
+  .content p {
+    font-size: 1.1rem;
+  }
+
+  .contact-icons {
+    margin-top: 9rem;
+
+  }
+
+  .logo {
+    width: 5rem;
+    top: 10px;
+    left: 10px;
+    border: 8px solid #fff;
+  }
+
+  .member-button {
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
   }
 }
+
 
 </style>

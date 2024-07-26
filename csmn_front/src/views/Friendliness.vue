@@ -42,7 +42,7 @@
 </template>
 
 <script setup>
-import {onMounted, ref} from 'vue'
+import {ref} from 'vue'
 import photo1 from '@/assets/images/convivialite/Convivialite1.jpeg'
 import photo2 from '@/assets/images/convivialite/Convivialite2.jpeg'
 import photo3 from '@/assets/images/convivialite/Convivialite3.jpeg'
@@ -51,7 +51,6 @@ import wave1 from '@/assets/waves/wave7.svg'
 import wave2 from '@/assets/waves/wave8.svg'
 import wave3 from '@/assets/waves/wave9.svg'
 import insta from '@/assets/icons/insta.svg'
-import yt from '@/assets/icons/logo_yt.png'
 import LatestFacebookPost from '@/components/LatestFacebookPost.vue'
 
 const photos = ref([photo1, photo2, photo3, photo4])
@@ -161,5 +160,23 @@ h1 {
 .wave3 {
   bottom: 0;
   z-index: -10;
+}
+
+@media(max-width:768px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .carousel-container {
+    width: 100%;
+  }
+
+  .thumbnail-container {
+    margin-top: 20px;
+  }
+
+  .waves {
+    display: none;
+  }
 }
 </style>

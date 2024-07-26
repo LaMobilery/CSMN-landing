@@ -47,8 +47,8 @@
       </AccordionItem>
     </section>
     <section class="partner">
-      <div class="partner-content">
         <h2>Partenaires</h2>
+      <div class="partner-content">
           <div class="white-background">
             <a href="https://ffessm.fr/" target="_blank">
               <img src="@/assets/images/partenaires/FFESSM-Logo.svg" alt="logo partenaire 1" class="partner-logo">
@@ -124,6 +124,29 @@ import AccordionItem from '@/components/AccordionItem.vue'
 
 .partner-logo {
   width: 100%;
+}
+
+@media(max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .partner-content {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #fff;
+  }
+
+  .partner {
+    background-color: #fff;
+  }
+
+  .white-background {
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
+  }
 }
 
 </style>

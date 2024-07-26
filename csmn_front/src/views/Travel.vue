@@ -204,4 +204,19 @@ img {
 .wave3 {
   bottom: 0;
 }
+
+@media(max-width: 768px) {
+  .travels {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .travels::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+
+  .image-block {
+    margin: 0 1rem;
+  }
+}
 </style>

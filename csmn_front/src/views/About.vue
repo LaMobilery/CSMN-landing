@@ -153,4 +153,20 @@ h1 {
 .wave3 {
   bottom: 0;
 }
+
+@media (max-width: 768px) {
+  .flex-row {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .left-block {
+    padding: 0 0 2rem 0;
+    width: 100%;
+  }
+
+  .right-block {
+    width: 100%;
+  }
+}
 </style>

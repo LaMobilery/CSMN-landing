@@ -131,4 +131,31 @@ h2 {
   bottom: 0;
   z-index: 10;
 }
+
+@media (max-width: 768px) {
+  .contact {
+    flex-direction: column;
+  }
+
+  .left-block {
+    margin-right: 0;
+  }
+
+  .waves {
+    display: none;
+  }
+
+  .flex-row {
+    flex-direction: column-reverse;
+  }
+
+  .address{
+    margin-left: 0;
+    margin-bottom: 1rem
+  }
+
+  .right-block {
+    margin-left: -1rem;
+  }
+}
 </style>
