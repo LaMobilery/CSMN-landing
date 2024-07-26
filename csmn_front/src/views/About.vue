@@ -123,7 +123,7 @@ h1 {
 .bottom-block img {
   width: 32px;
   height: 32px;
-  margin-right: 1rem;
+  margin-right: .5rem;
 }
 
 .waves {
