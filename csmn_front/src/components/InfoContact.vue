@@ -7,13 +7,13 @@
       <div v-if="activeButton === 'phone'" class="info">{{$t('infoContact.phoneNumber')}}</div>
     </div>
 
-    <div class="contact-button"
-        :class="{ active: activeButton === 'mail' }"
-        @click="handleActiveButton('mail')"
-    >
-      <img :src="mail" alt="bouton mail">
-      <span v-if="activeButton === 'mail'" class="info">{{$t('infoContact.email')}}</span>
-    </div>
+<!--    <div class="contact-button"-->
+<!--        :class="{ active: activeButton === 'mail' }"-->
+<!--        @click="handleActiveButton('mail')"-->
+<!--    >-->
+<!--      <img :src="mail" alt="bouton mail">-->
+<!--      <span v-if="activeButton === 'mail'" class="info">{{$t('infoContact.email')}}</span>-->
+<!--    </div>-->
     <div
         class="contact-button"
         :class="{ active: activeButton === 'messenger' }"
