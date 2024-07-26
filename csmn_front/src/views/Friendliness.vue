@@ -1,6 +1,16 @@
 <template>
   <section id="friendliness">
-    <h1>{{$t('friendliness.title')}}</h1>
+
+    <div class="top-content">
+
+      <h1>{{$t('friendliness.title')}}</h1>
+      <div class="social-media">
+        <span>Suivez-nous sur  </span>
+        <img @click="goToInstagram" :src="insta" alt="lien instagram">
+        <img @click="goToFacebook" :src="facebookLogo" alt="lien facbook">
+      </div>
+
+    </div>
 
     <div class="content">
       <div class="carousel-container">
@@ -22,14 +32,11 @@
 
       <div>
 
-      <LatestFacebookPost
-          :pageUrl="facebookPageUrl"
-          pageName="Club Sous-Marin du Nord"
-      />
-        <div @click="goToInstagram">
-          <span>Suivez-nous sur : </span>
-          <img :src="insta">
-        </div>
+<!--      <LatestFacebookPost-->
+<!--          :pageUrl="facebookPageUrl"-->
+<!--          pageName="Club Sous-Marin du Nord"-->
+<!--      />-->
+
       </div>
     </div>
 
@@ -51,6 +58,7 @@ import wave1 from '@/assets/waves/wave7.svg'
 import wave2 from '@/assets/waves/wave8.svg'
 import wave3 from '@/assets/waves/wave9.svg'
 import insta from '@/assets/icons/insta.svg'
+import facebookLogo from '@/assets/icons/facebook_logo.svg'
 import LatestFacebookPost from '@/components/LatestFacebookPost.vue'
 
 const photos = ref([photo1, photo2, photo3, photo4])
@@ -64,6 +72,10 @@ const changePhoto = (index) => {
 
 const goToInstagram = () => {
   window.open('https://www.instagram.com/csmn_lille/', '_blank')
+}
+
+const goToFacebook = () => {
+  window.open('https://www.facebook.com/ClubSousMarinNord/', '_blank')
 }
 </script>
 
@@ -175,5 +187,24 @@ h1 {
   .thumbnail-container {
     margin-top: 20px;
   }
+}
+
+.top-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.social-media img {
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  margin-left: 10px;
 }
 </style>
