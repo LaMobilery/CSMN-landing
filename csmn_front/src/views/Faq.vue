@@ -146,6 +146,7 @@ import AccordionItem from '@/components/AccordionItem.vue'
 
   .white-background {
     box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
+    width: 70%;
   }
 }
 

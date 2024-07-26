@@ -223,7 +223,7 @@ const goToMemberSite = () => {
   }
 
   .contact-icons {
-    margin-top: 9rem;
+    margin-top: 5rem;
   }
 
   .logo {

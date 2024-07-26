@@ -215,10 +215,6 @@ img {
     scrollbar-width: none;
   }
 
-  .logo_yt {
-    display: none;
-  }
-
   .travels::-webkit-scrollbar {
     display: none; /* Chrome, Safari, Opera */
   }
@@ -232,6 +228,12 @@ img {
 
   .image-block {
     margin: 0 1rem;
+  }
+
+  .top-content {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
   }
 }
 </style>

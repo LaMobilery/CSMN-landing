@@ -141,10 +141,6 @@ h2 {
     margin-right: 0;
   }
 
-  .waves {
-    display: none;
-  }
-
   .flex-row {
     flex-direction: column-reverse;
   }

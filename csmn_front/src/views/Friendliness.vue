@@ -174,9 +174,5 @@ h1 {
   .thumbnail-container {
     margin-top: 20px;
   }
-
-  .waves {
-    display: none;
-  }
 }
 </style>

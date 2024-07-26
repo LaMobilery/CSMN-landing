@@ -2,7 +2,6 @@
   <div class="main-container">
     <section class="container">
       <div class="flex-row">
-
         <h1>Catalogue des formations</h1>
 
         <div class="logo_yt" @click="goToYoutubeChannel">
@@ -230,12 +229,17 @@ const TrainingCardsFiltered = ref(TrainingCards)
     display: none;
   }
 
-  .logo_yt {
-    display: none;
+  .flex-row {
+    flex-direction: column;
+    align-items: center;
   }
 
   .wave-container {
-    display: none;
+    margin-top: -1rem;
+  }
+
+  .wave-container img {
+    height: 100%;
   }
 }
 
