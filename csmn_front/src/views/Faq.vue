@@ -93,6 +93,7 @@ import AccordionItem from '@/components/AccordionItem.vue'
   display: flex;
   flex-direction: row;
   background-color: #B3D6ED;
+  margin-top: -3rem;
 }
 
 .faq {
