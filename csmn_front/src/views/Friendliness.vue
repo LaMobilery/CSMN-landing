@@ -15,8 +15,7 @@
               :class="{ active: index === currentPhotoIndex }"
               @click="changePhoto(index)"
           >
-            <img
-                :src="photo">
+            <img :src="photo">
           </div>
         </div>
       </div>
@@ -30,7 +29,6 @@
         <div>
           <span>Suivez-nous sur : </span>
           <img :src="insta">
-          <img :src="yt" @click="goToYoutubeChannel">
         </div>
       </div>
 
@@ -69,28 +67,6 @@ const goToYoutubeChannel = () => {
 const changePhoto = (index) => {
   currentPhotoIndex.value = index
 }
-
-const isFBLoaded = ref(false)
-
-onMounted(() => {
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '867996038524066',
-      xfbml      : true,
-      version    : 'v17.0'
-    });
-    isFBLoaded.value = true
-  };
-
-  (function(d, s, id){
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) {return;}
-    js = d.createElement(s); js.id = id;
-    js.src = "https://connect.facebook.net/fr_FR/sdk.js";
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));
-})
-
 </script>
 
 <style scoped>
