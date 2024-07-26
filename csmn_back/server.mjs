@@ -27,13 +27,12 @@ app.post('/send-mail', async (req, res) => {
     try {
         const response = await resend.emails.send({
             from: "Acme <onboarding@resend.dev>",
-            to: ["contact@plongee-lille.fr"],
+            to: ["crenouleau@keyneosoft.fr"],
             subject: 'Formulaire de contact CSMN',
             text: `Nom: ${name}\nEmail: ${email}\nTéléphone: ${phone}\nMessage: ${message}`
         });
 
         res.status(200).json({ response });
-
         // if (response.status === 200) send message to user
 
     } catch (error) {
