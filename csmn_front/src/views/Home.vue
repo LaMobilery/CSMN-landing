@@ -231,7 +231,7 @@ const goToMemberSite = () => {
     width: 3rem;
     top: 10px;
     left: 10px;
-    border: 8px solid #fff;
+    border: 5px solid #fff;
   }
 
   .member-button {
@@ -241,8 +241,7 @@ const goToMemberSite = () => {
   }
 
   .waves {
-    position: absolute;
-    bottom: 0;}
-
+    display: none;
+  }
 }
 </style>
