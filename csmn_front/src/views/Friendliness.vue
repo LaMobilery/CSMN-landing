@@ -24,15 +24,13 @@
 
       <LatestFacebookPost
           :pageUrl="facebookPageUrl"
-          pageName="Tours Shooting Stars"
+          pageName="Club Sous Marin du Nord"
       />
-        <div>
+        <div @click="goToInstagram">
           <span>Suivez-nous sur : </span>
           <img :src="insta">
         </div>
       </div>
-
-
     </div>
 
   </section>
@@ -59,10 +57,14 @@ import LatestFacebookPost from '@/components/LatestFacebookPost.vue'
 const photos = ref([photo1, photo2, photo3, photo4])
 
 const currentPhotoIndex = ref(0)
-const facebookPageUrl = 'https://www.facebook.com/ClubSousMarinDuNord';
+const facebookPageUrl = 'https://www.facebook.com/ClubSousMarinNord';
 
 const changePhoto = (index) => {
   currentPhotoIndex.value = index
+}
+
+const goToInstagram = () => {
+  window.open('https://www.instagram.com/csmn_lille/', '_blank')
 }
 </script>
 
