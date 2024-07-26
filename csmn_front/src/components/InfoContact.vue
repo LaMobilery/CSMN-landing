@@ -84,5 +84,9 @@ const goToMessenger = () => {
     width: 48px;
     height: 48px;
   }
+
+  .contact-button span {
+    font-size: .7rem;
+  }
 }
 </style>
