@@ -207,4 +207,16 @@ h1 {
   height: 32px;
   margin-left: 10px;
 }
+
+@media (max-width: 768px) {
+  .top-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social-media {
+    margin-bottom: 2rem;
+  }
+
+}
 </style>

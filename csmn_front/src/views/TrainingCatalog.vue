@@ -153,6 +153,10 @@ const TrainingCardsFiltered = ref(TrainingCards)
 </script>
 
 <style scoped>
+
+h1 {
+  font-size: 2rem;
+}
 .main-container {
   display: flex;
   flex-direction: column;
