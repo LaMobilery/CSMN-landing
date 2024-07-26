@@ -20,7 +20,7 @@
         @click="handleActiveButton('messenger')"
     >
       <img :src="messenger" alt="bouton messenger">
-      <span v-if="activeButton === 'messenger'" class="info">{{$t('infoContact.messenger')}}</span>
+      <span v-if="activeButton === 'messenger'" @click="goToMessenger" class="info">{{$t('infoContact.messenger')}}</span>
     </div>
     <div
         class="contact-button"
@@ -45,6 +45,10 @@ const activeButton = ref('')
 
 const handleActiveButton = (button) => {
   activeButton.value = activeButton.value === button ? '' : button;
+};
+
+const goToMessenger = () => {
+  window.open('https://m.me/452269651463869', '_blank');
 };
 </script>
 
