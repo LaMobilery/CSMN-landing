@@ -228,7 +228,7 @@ const goToMemberSite = () => {
   }
 
   .logo {
-    width: 5rem;
+    width: 3rem;
     top: 10px;
     left: 10px;
     border: 8px solid #fff;
@@ -240,6 +240,4 @@ const goToMemberSite = () => {
     padding: 5px 10px;
   }
 }
-
-
 </style>

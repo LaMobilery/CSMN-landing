@@ -20,7 +20,7 @@
         @click="handleActiveButton('messenger')"
     >
       <img :src="messenger" alt="bouton messenger">
-      <span v-if="activeButton === 'messenger'" @click="goToMessenger" class="info">{{$t('infoContact.messenger')}}</span>
+      <span v-if="activeButton === 'messenger'" @click.stop="goToMessenger" class="info">{{$t('infoContact.messenger')}}</span>
     </div>
     <div
         class="contact-button"
