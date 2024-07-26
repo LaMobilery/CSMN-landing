@@ -95,6 +95,10 @@ h1 {
   font-size: 2rem;
 }
 
+.container {
+  margin-top: -8rem;
+}
+
 .top-content {
   display: flex;
   justify-content: space-between;
