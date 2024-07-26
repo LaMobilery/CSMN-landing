@@ -16,33 +16,33 @@
           <li>{{ $t('faq.questions.q1.answer8') }}</li>
         </ul>
       </AccordionItem>
-      <AccordionItem title="Comment se déroule la formation Niveau 1 ?">
+      <AccordionItem :title="$t('faq.questions.q2.question')">
         <ul>
-          <li>Vous serez intégré à un groupe pour les séances en piscine : le mardi, le jeudi ou le vendredi.</li>
-          <li>Vous devrez plonger 4 fois à minima, en milieu naturel (en fosse, en carrière ou en mer).</li>
-          <li>Votre formation durera de l'ordre de 3 à 4 mois.</li>
+          <li>{{ $t('faq.questions.q2.answer1') }}</li>
+          <li>{{ $t('faq.questions.q2.answer2') }}</li>
+          <li>{{ $t('faq.questions.q2.answer3') }}</li>
         </ul>
       </AccordionItem>
-      <AccordionItem title="Comment se déroule la formation en Apnée ?">
+      <AccordionItem :title="$t('faq.questions.q3.question')">
         <ul>
-          <li>Le club forme au niveau "apnéiste" et "apnéiste confirmé".</li>
-          <li>Vous serez intégré à un groupe de 10 apnéistes (maximum).</li>
-          <li>Votre formation s'étalera sur 4 et 6 mois, à raison d'une séance par semaine.</li>
+          <li>{{ $t('faq.questions.q3.answer1') }}</li>
+          <li>{{ $t('faq.questions.q3.answer2') }}</li>
+          <li>{{ $t('faq.questions.q3.answer3') }}</li>
         </ul>
       </AccordionItem>
-      <AccordionItem title="Puis-je m'inscrire en cours d'année ?">
+      <AccordionItem :title="$t('faq.questions.q4.question')">
         <ul>
-          <li>Oui, jusque fin mars.</li>
+          <li>{{ $t('faq.questions.q4.answer') }}</li>
         </ul>
       </AccordionItem>
-      <AccordionItem title="Le club propose-t-il des formations passerelles ?">
+      <AccordionItem :title="$t('faq.questions.q5.question')">
         <ul>
-          <li>Oui et vous pourrez ainsi continuer vos formations aux brevets de la FFESSM.</li>
+          <li>{{ $t('faq.questions.q5.answer1') }}</li>
         </ul>
       </AccordionItem>
-      <AccordionItem title="Les enfants peuvent-ils devenir membres du club ?">
+      <AccordionItem :title="$t('faq.questions.q6.question')">
         <ul>
-          <li>Nous accueillons les ados à partir de 12 ans, afin de passer le Niveau 1.</li>
+          <li>{{ $t('faq.questions.q6.answer1') }}</li>
         </ul>
       </AccordionItem>
     </section>

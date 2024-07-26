@@ -73,7 +73,6 @@ const submitForm = async () => {
     snackbar.value = false;
   }, 3000);
 };
-
 </script>
 
 <style scoped>

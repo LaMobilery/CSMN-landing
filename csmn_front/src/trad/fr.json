@@ -80,16 +80,28 @@
         "answer8": "Formule piscine : 46 €"
       },
       "q2": {
-        "question": "Quels sont les tarifs d'inscription ?",
-        "answer": "Les tarifs d'inscription varient en fonction de la formule choisie. Pour plus d'informations, contactez-nous."
+        "question": "Comment se déroule la formation Niveau 1 ?",
+        "answer1": "Vous serez intégré à un groupe pour les séances en piscine : le mardi, le jeudi ou le vendredi.",
+        "answer2": "Vous devrez plonger 4 fois à minima, en milieu naturel (en fosse, en carrière ou en mer).",
+        "answer3": "Votre formation durera de l'ordre de 3 à 4 mois."
       },
       "q3": {
-        "question": "Quels sont les équipements nécessaires pour plonger ?",
-        "answer": "Pour plonger, vous aurez besoin d'un masque, d'un tuba, de palmes, d'une combinaison, d'un gilet stabilisateur, d'un détendeur et d'une bouteille d'air."
+        "question": "Comment se déroule la formation en Apnée ?",
+        "answer1": "Le club forme au niveau \"apnéiste\" et \"apnéiste confirmé\".",
+        "answer2": "Vous serez intégré à un groupe de 10 apnéistes (maximum).",
+        "answer3": "Votre formation s'étalera sur 4 et 6 mois, à raison d'une séance par semaine."
       },
       "q4": {
-        "question": "Quels sont les niveaux de plongée proposés ?",
-        "answer": "Le club propose des formations pour tous les niveaux, du débutant au confirmé."
+        "question": "Puis-je m'inscrire en cours d'année ?",
+        "answer": "Oui, jusque fin mars."
+      },
+      "q5": {
+          "question": "Le club propose-t-il des formations passerelles ?",
+          "answer1": "Oui et vous pourrez ainsi continuer vos formations aux brevets de la FFESSM."
+      },
+      "q6": {
+          "question": "Les enfants peuvent-ils devenir membres du club ?",
+          "answer1": "Nous accueillons les ados à partir de 12 ans, afin de passer le Niveau 1."
       }
     }
   }

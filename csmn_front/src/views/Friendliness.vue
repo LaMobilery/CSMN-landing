@@ -24,7 +24,7 @@
 
       <LatestFacebookPost
           :pageUrl="facebookPageUrl"
-          pageName="Club Sous Marin du Nord"
+          pageName="Club Sous-Marin du Nord"
       />
         <div @click="goToInstagram">
           <span>Suivez-nous sur : </span>
@@ -57,7 +57,7 @@ import LatestFacebookPost from '@/components/LatestFacebookPost.vue'
 const photos = ref([photo1, photo2, photo3, photo4])
 
 const currentPhotoIndex = ref(0)
-const facebookPageUrl = 'https://www.facebook.com/ClubSousMarinNord';
+const facebookPageUrl = 'https://www.facebook.com/ClubSousMarinNord/';
 
 const changePhoto = (index) => {
   currentPhotoIndex.value = index
@@ -69,7 +69,6 @@ const goToInstagram = () => {
 </script>
 
 <style scoped>
-
 h1 {
   font-size: 32px;
   font-weight: 700;
