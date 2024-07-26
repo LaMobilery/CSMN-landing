@@ -157,6 +157,7 @@ const TrainingCardsFiltered = ref(TrainingCards)
 h1 {
   font-size: 2rem;
 }
+
 .main-container {
   display: flex;
   flex-direction: column;
@@ -240,8 +241,9 @@ h1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  margin-top: -4rem;
 }
-
 
 @media(max-width: 768px) {
   .filters {
