@@ -26,6 +26,7 @@
                         :subtitle="card.subtitle"
                         :text="card.text"
                         :background-image="card.backgroundImage"/>
+          <img :src="formation0">
         </div>
       </div>
 
