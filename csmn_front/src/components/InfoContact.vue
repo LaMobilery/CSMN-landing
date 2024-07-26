@@ -12,7 +12,7 @@
         @click="handleActiveButton('mail')"
     >
       <img :src="mail" alt="bouton mail">
-      <span v-if="activeButton === 'mail'" class="info">{{$t('infoContact.email')}}</span>
+      <span v-if="activeButton === 'mail'" @click.stop class="info">{{$t('infoContact.email')}}</span>
     </div>
     <div
         class="contact-button"
