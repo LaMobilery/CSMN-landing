@@ -239,5 +239,10 @@ const goToMemberSite = () => {
     right: 10px;
     padding: 5px 10px;
   }
+
+  .waves {
+    position: absolute;
+    bottom: 0;}
+
 }
 </style>

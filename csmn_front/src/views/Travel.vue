@@ -208,11 +208,26 @@ img {
 @media(max-width: 768px) {
   .travels {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .logo_yt {
+    display: none;
   }
 
   .travels::-webkit-scrollbar {
     display: none; /* Chrome, Safari, Opera */
+  }
+
+  .image-top,
+  .image-bottom {
+    display: block;
+    width: 300px;
+    height: 350px;
   }
 
   .image-block {
