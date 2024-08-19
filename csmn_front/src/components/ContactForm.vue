@@ -55,7 +55,7 @@ const form = ref({
 
 const submitForm = async () => {
   try {
-    await axios.post('http://localhost:3000/send-mail', form.value);
+    await axios.post('/send-mail', form.value);
     snackMessage.value = 'Votre message a bien été envoyé !';
     snackbar.value = true;
     isValid.value = true;
