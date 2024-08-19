@@ -167,5 +167,9 @@ h1 {
   .right-block {
     width: 100%;
   }
+
+  .waves {
+    height: 5vh;
+  }
 }
 </style>
