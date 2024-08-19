@@ -241,5 +241,10 @@ img {
     align-items: flex-start;
     margin-bottom: 2rem;
   }
+
+  .waves {
+    height: 0;
+    z-index: 1;
+  }
 }
 </style>
