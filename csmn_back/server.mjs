@@ -24,7 +24,7 @@ app.use(express.static(path.join(__dirname, '../csmn_front/dist')));
 
 const limiter = rateLimit({
     windowMs: 15 * 60 * 1000, // 15 minutes
-    limit: 3, // Limit each IP to 3 requests per `window` (here, per 15 minutes)
+    limit: 1, // Limit each IP to 3 requests per `window` (here, per 15 minutes)
     standardHeaders: true, // Return rate limit info in the `RateLimit-*` headers
     legacyHeaders: false, // Disable the `X-RateLimit-*` headers
 })
