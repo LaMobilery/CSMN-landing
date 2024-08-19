@@ -12,9 +12,9 @@
       <div class="travels">
         <div class="image-block">
           <div class="image-container">
-            <img :src="gwada1" alt="photo" class="image-top">
+            <img :src="voyage1" alt="photo" class="image-top">
             <div class="separator"></div>
-            <img :src="gwada2" alt="photo" class="image-bottom">
+            <img :src="voyage2" alt="photo" class="image-bottom">
           </div>
 
           <div class="caption">
@@ -25,9 +25,9 @@
 
         <div class="image-block">
           <div class="image-container">
-            <img :src="egypte1" alt="photo" class="image-top">
+            <img :src="voyage3" alt="photo" class="image-top">
             <div class="separator"></div>
-            <img :src="egypte2" alt="photo" class="image-bottom">
+            <img :src="voyage4" alt="photo" class="image-bottom">
           </div>
 
           <div class="caption">
@@ -38,9 +38,9 @@
 
         <div class="image-block">
           <div class="image-container">
-            <img :src="espagne1" alt="photo" class="image-top">
+            <img :src="voyage5" alt="photo" class="image-top">
             <div class="separator"></div>
-            <img :src="espagne2" alt="photo" class="image-bottom">
+            <img :src="voyage6" alt="photo" class="image-bottom">
           </div>
 
           <div class="caption">
@@ -51,9 +51,9 @@
 
         <div class="image-block">
           <div class="image-container">
-            <img :src="bretagne1" alt="photo" class="image-top">
+            <img :src="voyage7" alt="photo" class="image-top">
             <div class="separator"></div>
-            <img :src="bretagne2" alt="photo" class="image-bottom">
+            <img :src="voyage8" alt="photo" class="image-bottom">
           </div>
 
           <div class="caption">
@@ -72,14 +72,14 @@
 </template>
 
 <script lang="ts" setup>
-import gwada1 from '@/assets/images/voyages/Voyage1.png';
-import gwada2 from '@/assets/images/voyages/Voyage2.jpg';
-import bretagne1 from '@/assets/images/voyages/Voyage7.jpeg';
-import bretagne2 from '@/assets/images/voyages/Voyage8.jpeg';
-import egypte1 from '@/assets/images/voyages/Voyage3.jpg';
-import egypte2 from '@/assets/images/voyages/Voyage4.jpg';
-import espagne1 from '@/assets/images/voyages/Voyage5.jpg';
-import espagne2 from '@/assets/images/voyages/Voyage6.png';
+import voyage1 from '@/assets/images/voyages/Voyage1.png';
+import voyage2 from '@/assets/images/voyages/Voyage2.jpg';
+import voyage3 from '@/assets/images/voyages/Voyage3.jpg';
+import voyage4 from '@/assets/images/voyages/Voyage4.jpg';
+import voyage5 from '@/assets/images/voyages/Voyage5.jpg';
+import voyage6 from '@/assets/images/voyages/Voyage6.png';
+import voyage7 from '@/assets/images/voyages/Voyage7.jpeg';
+import voyage8 from '@/assets/images/voyages/Voyage8.jpeg';
 import logo_yt from '@/assets/icons/logo_yt.png';
 import wave1 from '@/assets/waves/wave4.svg'
 import wave2 from '@/assets/waves/wave5.svg'
@@ -132,6 +132,7 @@ h1 {
 .travels {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 4rem;
 }
 
 .image-block {
