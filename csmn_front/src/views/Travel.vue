@@ -103,6 +103,7 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 4rem;
 }
 
 .logo_yt {
