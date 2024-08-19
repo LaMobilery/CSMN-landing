@@ -33,7 +33,7 @@
     </form>
 
     <transition name="fade">
-      <div v-if="snackbar" class="snackbar">{{ snackMessage }}</div>
+      <div v-if="snackbar" class="snackbar" :style="isValid ?  {backgroundColor: '#4CAF50'} : { backgroundColor: '#D32F2F'}">{{ snackMessage }}</div>
     </transition>
   </section>
 </template>
@@ -43,6 +43,7 @@ import { ref } from 'vue';
 import axios from 'axios';
 
 const snackbar = ref(false);
+const isValid = ref(false);
 const snackMessage = ref('');
 
 const form = ref({
@@ -57,6 +58,7 @@ const submitForm = async () => {
     await axios.post('http://localhost:3000/send-mail', form.value);
     snackMessage.value = 'Votre message a bien été envoyé !';
     snackbar.value = true;
+    isValid.value = true;
     form.value = {
       name: '',
       email: '',
@@ -67,6 +69,7 @@ const submitForm = async () => {
     console.error('Failed to send email:', error);
     snackMessage.value = 'Une erreur est survenue, veuillez réessayer plus tard.';
     snackbar.value = true;
+    isValid.value = false;
   }
 
   setTimeout(() => {
@@ -171,7 +174,6 @@ textarea {
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #4CAF50;
   color: #fff;
   padding: 16px;
   border-radius: 4px;
