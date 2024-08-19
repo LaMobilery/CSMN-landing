@@ -13,7 +13,6 @@ const __dirname = path.dirname(__filename);
 const PORT = process.env.PORT || 3000;
 
 app.set('trust proxy', 1 /* number of proxies between user and server */)
-app.use(cors());
 app.use(bodyParser.json());
 
 dotenv.config();
@@ -23,8 +22,6 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 // Serve static files from the Vue app
 app.use(express.static(path.join(__dirname, '../csmn_front/dist')));
 
-app.get('/ip', (request, response) => response.send(request.ip))
-
 const limiter = rateLimit({
     windowMs: 15 * 60 * 1000, // 15 minutes
     limit: 3, // Limit each IP to 3 requests per `window` (here, per 15 minutes)
@@ -32,7 +29,7 @@ const limiter = rateLimit({
     legacyHeaders: false, // Disable the `X-RateLimit-*` headers
 })
 
-app.post('/send-mail', limiter, async (req, res) => {
+app.post('/send-mail', cors({origin: ['https://www.plongee-lille.fr', `https://${process.env.APP_ID.replaceAll('_', '-')}.cleverapps.io`]}), limiter, async (req, res) => {
     const { name, email, phone, message } = req.body;
 
     try {
@@ -44,7 +41,6 @@ app.post('/send-mail', limiter, async (req, res) => {
         });
 
         res.status(200).json({ response });
-        // if (response.status === 200) send message to user
 
     } catch (error) {
         console.log(error);
