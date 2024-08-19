@@ -238,7 +238,7 @@ img {
 
   .top-content {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 2rem;
   }
 }
