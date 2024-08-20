@@ -119,17 +119,18 @@ h2 {
 
 .wave1 {
   bottom: 0;
-  z-index: 1;
+  z-index: 3;
 }
 
 .wave2 {
   bottom: 0;
   width: 100%;
+  z-index: 2;
 }
 
 .wave3 {
   bottom: 0;
-  z-index: 10;
+  z-index: 1;
 }
 
 @media (max-width: 768px) {

@@ -6,6 +6,7 @@
     <Travel/>
     <Friendliness/>
     <Contact/>
+    <Team/>
     <Faq/>
     <Footer/>
     <ScrollToTop/>
@@ -23,6 +24,7 @@ import Friendliness from '@/views/Friendliness.vue'
 import Contact from '@/views/Contact.vue'
 import Faq from '@/views/Faq.vue'
 import ScrollToTop from '@/components/ScrollToTop.vue'
+import Team from '@/views/Team.vue'
 </script>
 
 <style scoped>

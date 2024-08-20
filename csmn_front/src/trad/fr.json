@@ -65,6 +65,9 @@
     "access": "Pour accéder au club, dirigez vous vers la droite de l'escalier en béton qui est visible depuis le parking de la Piscine Marx Dormoy.",
     "contactUs": "Contactez-nous"
   },
+  "team": {
+    "title": "L’équipe du Comité Directeur"
+  },
   "faq": {
     "title": "FAQ",
     "questions": {
