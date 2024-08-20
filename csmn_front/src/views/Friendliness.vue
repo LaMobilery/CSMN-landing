@@ -30,14 +30,12 @@
         </div>
       </div>
 
-      <div>
-
+<!--      <div>-->
 <!--      <LatestFacebookPost-->
 <!--          :pageUrl="facebookPageUrl"-->
 <!--          pageName="Club Sous-Marin du Nord"-->
 <!--      />-->
-
-      </div>
+<!--      </div>-->
     </div>
 
   </section>
@@ -223,5 +221,11 @@ h1 {
     margin-bottom: 2rem;
   }
 
+  .waves {
+    position: relative;
+    width: 100%;
+    height: 10vh;
+    z-index: -1;
+  }
 }
 </style>
