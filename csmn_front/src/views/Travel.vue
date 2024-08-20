@@ -81,7 +81,6 @@ import voyage5 from '@/assets/images/voyages/Voyage5.jpg';
 import voyage6 from '@/assets/images/voyages/Voyage6.png';
 import voyage7 from '@/assets/images/voyages/Voyage7.jpeg';
 import voyage8 from '@/assets/images/voyages/Voyage8.jpeg';
-import logo_yt from '@/assets/icons/logo_yt.png';
 import wave1 from '@/assets/waves/wave4.svg'
 import wave2 from '@/assets/waves/wave5.svg'
 import wave3 from '@/assets/waves/wave6.svg'

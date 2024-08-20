@@ -10,7 +10,6 @@
         />
       </div>
 
-
       <div class="filters">
         <div class="filter" @click="filterBy('all')">{{ $t('training.filter.all') }}</div>
         <div class="filter" @click="filterBy('discovery')">{{ $t('training.filter.discovery') }}</div>
@@ -40,7 +39,6 @@
 import TrainingCard from '@/components/TrainingCard.vue'
 import {ref} from 'vue'
 import waveSeparator from '../../src/assets/waves/training-wave.svg'
-import logo_yt from '@/assets/icons/logo_yt.png';
 import formation0 from '@/assets/images/formations/Formation0.jpg'
 import formation1 from '@/assets/images/formations/Formation1.png'
 import formation2 from '@/assets/images/formations/Formation2.png'
@@ -53,7 +51,6 @@ import formation8 from '@/assets/images/formations/Formation8.jpg'
 import formation9 from '@/assets/images/formations/Formation9.jpg'
 import formation10 from '@/assets/images/formations/Formation10.jpg'
 import YoutubeButton from '@/components/YoutubeButton.vue'
-
 
 const formationImages = [
   formation0,
