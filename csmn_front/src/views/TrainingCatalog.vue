@@ -4,10 +4,10 @@
       <div class="flex-row">
         <h1>Catalogue des formations</h1>
 
-        <div class="logo_yt" @click="goToYoutubeChannel">
-          <span>{{ $t('travel.videos') }}</span>
-          <img :src="logo_yt">
-        </div>
+        <YoutubeButton
+            :title="$t('travel.videos')"
+            :goToYoutubeChannel="goToYoutubeChannel"
+        />
       </div>
 
 
@@ -52,6 +52,7 @@ import formation7 from '@/assets/images/formations/Formation7.jpg'
 import formation8 from '@/assets/images/formations/Formation8.jpg'
 import formation9 from '@/assets/images/formations/Formation9.jpg'
 import formation10 from '@/assets/images/formations/Formation10.jpg'
+import YoutubeButton from '@/components/YoutubeButton.vue'
 
 
 const formationImages = [
@@ -253,9 +254,21 @@ h1 {
 
   .flex-row {
     flex-direction: column;
+    margin-top: -1rem;
     align-items: flex-start;
   }
 
+  .logo_yt {
+    cursor: pointer;
+    height: fit-content;
+    color: #fff !important;
+    display: flex;
+    align-items: center;
+    background-color: #263D63;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    border-radius: 1000px;
+    margin-right: 3rem;
+  }
 
   .wave-container {
     margin-top: -1rem;

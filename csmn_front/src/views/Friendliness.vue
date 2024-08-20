@@ -170,6 +170,7 @@ h1 {
 .wave3 {
   bottom: 0;
   z-index: -10;
+  transform: rotateY(180deg);
 }
 
 .top-content {

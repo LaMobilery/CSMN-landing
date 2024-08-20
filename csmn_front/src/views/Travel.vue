@@ -3,10 +3,11 @@
     <div class="container">
       <div class="top-content">
         <h1>{{ $t('travel.title') }}</h1>
-        <div class="logo_yt" @click="goToYoutubeChannel">
-          <span>{{ $t('travel.videos') }}</span>
-          <img :src="logo_yt">
-        </div>
+
+        <YoutubeButton
+          :title="$t('travel.videos')"
+          :goToYoutubeChannel="goToYoutubeChannel"
+          />
       </div>
 
       <div class="travels">
@@ -84,6 +85,7 @@ import logo_yt from '@/assets/icons/logo_yt.png';
 import wave1 from '@/assets/waves/wave4.svg'
 import wave2 from '@/assets/waves/wave5.svg'
 import wave3 from '@/assets/waves/wave6.svg'
+import YoutubeButton from '@/components/YoutubeButton.vue'
 
 const goToYoutubeChannel = () => {
   window.open('https://www.youtube.com/playlist?list=PLnzBg8pBqF1y0xTaS7tIcsfgtUzqfEAvs', '_blank');
