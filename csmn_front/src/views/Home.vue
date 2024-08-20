@@ -240,7 +240,19 @@ const goToMemberSite = () => {
   }
 
   .waves {
-
+    margin-bottom: 0;
   }
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .home-section {
+    overflow: hidden;
+    position: relative;
+  }
+
+  .waves {
+    min-height: auto; /* ou essayez de supprimer */
+    max-height: none; /* ou essayez de supprimer */
+  }
+}
+
 </style>
