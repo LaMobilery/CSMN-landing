@@ -89,6 +89,10 @@ import AccordionItem from '@/components/AccordionItem.vue'
 </script>
 
 <style scoped>
+h1 {
+  font-size: 2rem;
+}
+
 .container {
   display: flex;
   flex-direction: row;
