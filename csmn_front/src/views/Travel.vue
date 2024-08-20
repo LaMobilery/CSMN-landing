@@ -241,6 +241,7 @@ img {
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 2rem;
+    margin-top: 1rem;
   }
 
   .waves {
