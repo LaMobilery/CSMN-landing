@@ -240,7 +240,7 @@ const goToMemberSite = () => {
   }
 
   .waves {
-    display: none;
+
   }
 }
 </style>
