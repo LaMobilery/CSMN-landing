@@ -215,7 +215,8 @@ h1 {
 @media (max-width: 768px) {
   .top-content {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    margin-top: -1rem;
   }
 
   .social-media {
