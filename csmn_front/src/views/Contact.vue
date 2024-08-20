@@ -152,6 +152,15 @@ h2 {
 
   .right-block {
     margin-left: -1rem;
+    margin-bottom: -1rem;
+  }
+
+  .waves {
+    position: relative;
+    width: 100%;
+    height: 10vh;
+    background-color: #1C3052;
+    z-index: -1;
   }
 }
 </style>

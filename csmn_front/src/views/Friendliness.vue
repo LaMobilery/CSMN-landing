@@ -172,20 +172,6 @@ h1 {
   z-index: -10;
 }
 
-@media(max-width:768px) {
-  .content {
-    flex-direction: column;
-  }
-
-  .carousel-container {
-    width: 100%;
-  }
-
-  .thumbnail-container {
-    margin-top: 20px;
-  }
-}
-
 .top-content {
   display: flex;
   flex-direction: row;
@@ -211,6 +197,18 @@ h1 {
 }
 
 @media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .carousel-container {
+    width: 100%;
+  }
+
+  .thumbnail-container {
+    margin-top: 20px;
+  }
+
   .top-content {
     flex-direction: column;
     align-items: flex-start;
@@ -228,4 +226,5 @@ h1 {
     z-index: -1;
   }
 }
+
 </style>
