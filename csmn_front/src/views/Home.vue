@@ -208,7 +208,7 @@ const goToMemberSite = () => {
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1025px) {
   .content h1 {
     font-size: 1.5rem;
   }
