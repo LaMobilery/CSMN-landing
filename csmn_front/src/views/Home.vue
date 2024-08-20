@@ -18,7 +18,7 @@
       </div>
     </div>
   </section>
-  <div>
+  <div v-if="isDesktop">
     <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
          viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
       <defs>
@@ -39,10 +39,22 @@
 import logo from '@/assets/images/logo_csmn.png'
 import calendar from '@/assets/icons/calendar.svg'
 import InfoContact from '@/components/InfoContact.vue'
+import {onMounted, ref} from 'vue'
 
 const goToMemberSite = () => {
   window.open('https://membres.plongee-lille.fr/', '_blank');
 }
+
+const isDesktop = ref(true)
+
+const checkDeviceType = () => {
+  const userAgent = navigator.userAgent
+  isDesktop.value = !/Mobi|Android|iPhone|iPad|Tablet|iPod/i.test(userAgent);
+}
+
+onMounted(() => {
+  checkDeviceType()
+})
 </script>
 
 <style scoped>
@@ -240,19 +252,9 @@ const goToMemberSite = () => {
   }
 
   .waves {
-    margin-bottom: 0;
+    display: none;
   }
 }
-@media (min-width: 768px) and (max-width: 1024px) {
-  .home-section {
-    overflow: hidden;
-    position: relative;
-  }
 
-  .waves {
-    min-height: auto; /* ou essayez de supprimer */
-    max-height: none; /* ou essayez de supprimer */
-  }
-}
 
 </style>
