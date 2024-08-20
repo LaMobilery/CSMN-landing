@@ -186,6 +186,8 @@ h1 {
   display: flex;
   flex-direction: row;
   overflow-x: auto;
+  position: relative;
+  z-index: 2;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
@@ -205,7 +207,6 @@ h1 {
   background-color: #67ACDA;
   position: relative;
   margin-top: -2rem;
-  z-index: -1;
   width: 100%;
   height: 30vh;
 }
