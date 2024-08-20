@@ -166,9 +166,9 @@ const goToMemberSite = () => {
 
 .waves {
   position: absolute;
-  bottom: 7px;
+  bottom: 0;
   width: 100%;
-  height:20vh;
+  height: 20vh;
   margin-bottom:-7px;
   min-height:100px;
   max-height:150px;
@@ -208,7 +208,7 @@ const goToMemberSite = () => {
   }
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 768px) {
   .content h1 {
     font-size: 1.5rem;
   }
