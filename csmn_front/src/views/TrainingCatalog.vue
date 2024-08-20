@@ -253,8 +253,9 @@ h1 {
 
   .flex-row {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
   }
+
 
   .wave-container {
     margin-top: -1rem;
