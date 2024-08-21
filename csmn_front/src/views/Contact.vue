@@ -108,7 +108,7 @@ h2 {
   width: 100%;
   height: 30vh;
   background-color: #1C3052;
-  z-index: -1;
+  z-index: 1;
 }
 
 .wave {
@@ -161,7 +161,7 @@ h2 {
     width: 100%;
     height: 10vh;
     background-color: #1C3052;
-    z-index: -1;
+    z-index: 1;
   }
 }
 </style>
