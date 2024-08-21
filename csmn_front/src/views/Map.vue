@@ -30,6 +30,5 @@ h1 {
   margin-bottom: 4rem;
   height: 500px;
   width: 100%;
-  border: 2px solid red
 }
 </style>

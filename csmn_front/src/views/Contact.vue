@@ -66,7 +66,7 @@ import ContactForm from '@/components/ContactForm.vue'
 
 .contact-us {
   margin-top: 2rem;
-  z-index: 100;
+  z-index: 10000;
 }
 
 .right-block {
@@ -162,6 +162,14 @@ h2 {
     height: 10vh;
     background-color: #1C3052;
     z-index: 1;
+  }
+}
+
+ /* if screen size is in 4k add margintop over waves */
+@media (min-width: 2560px) {
+  .waves {
+    overflow: hidden;
+
   }
 }
 </style>
