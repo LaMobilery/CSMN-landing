@@ -8,9 +8,7 @@ body, html {
 }
 
 #app {
-    display: -webkit-box;    /* OLD - iOS 6-, Safari 3.1-6 */
-    display: -webkit-flex;  /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-    display: flex;
+    display: flex;         /* NEW, Opera 12.1, Firefox 20+ */
     flex-direction: column;
     width: 100%;
     min-height: 100vh;

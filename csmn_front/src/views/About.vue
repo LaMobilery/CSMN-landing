@@ -22,10 +22,17 @@
       </a>
     </div>
   </section>
-  <div class="waves" :style="isSafari ? '' : '' ">
-    <img :src="wave1" class="wave wave1">
-    <img :src="wave2" class="wave wave2">
-    <img :src="wave3" class="wave wave3">
+  <div class="waves">
+<!--    <div v-if="isSafari" class="safari"></div>-->
+    <div class="image-wrapper">
+      <img :src="wave1" class="wave wave1">
+    </div>
+    <div class="image-wrapper">
+      <img :src="wave2" class="wave wave2">
+    </div>
+    <div class="image-wrapper">
+      <img :src="wave3" class="wave wave3">
+    </div>
   </div>
 </template>
 
@@ -44,7 +51,6 @@ const goToYoutubeChannel = () => {
 }
 
 const isSafari = ref(false)
-
 
 const checkSafari = () => {
   if (navigator.userAgent.includes('Safari') && !navigator.userAgent.includes("Chrome")) {
@@ -148,6 +154,8 @@ h1 {
 .wave3 {
   bottom: 0;
 }
+
+
 
 @media (max-width: 768px) {
   .flex-row {
