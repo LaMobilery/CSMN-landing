@@ -25,54 +25,65 @@ import wave2 from '@/assets/waves/wave2.svg'
 import wave3 from '@/assets/waves/wave13.svg'
 import TeamCard from '@/components/TeamCard.vue'
 import president from '@/assets/images/team/president.jpeg'
+import team1 from '@/assets/images/team/team1.png'
+import team2 from '@/assets/images/team/team2.jpeg'
+import team3 from '@/assets/images/team/team3.jpeg'
+import team4 from '@/assets/images/team/team4.jpeg'
+import team5 from '@/assets/images/team/team5.jpeg'
+import team6 from '@/assets/images/team/team6.png'
+import team7 from '@/assets/images/team/team7.png'
+import team8 from '@/assets/images/team/team8.jpeg'
+import team9 from '@/assets/images/team/team9.jpeg'
+import team10 from '@/assets/images/team/team10.jpeg'
+import team11 from '@/assets/images/team/team11.png'
 
 
 const TeamCards = [
   {
-    photo: president,
+    photo: team1,
     role: 'Président',
     name: 'Fabrice BELLOTTI',
     email: 'president@plongee-lille.fr'
   },  {
-    photo: president,
+    photo: team2,
     role: 'Secrétaire',
     name: 'Cécile CAULLERY',
     email: 'secretaire@plongee-lille.fr'
   },  {
-    photo: president,
+    photo: team3,
     role: 'Trésorier',
     name: 'David TAQUET',
     email: 'tresorier@plongee-lille.fr'
   },  {
-    photo: president,
+    photo: team4,
     role: 'Président Adjoint',
     name: 'Christophe QUIVRON',
   },  {
-    photo: president,
+    photo: team5,
     role: 'Membre',
     name: 'Nathan BAELEN',
   },  {
-    photo: president,
+    photo: team6,
     role: 'Membre',
     name: 'Bertrand DIGONNET',
   },  {
-    photo: president,
+    photo: team7,
     role: 'Membre',
     name: 'Sylvie CHERRIER',
   },  {
-    photo: president,
+    photo: team8,
     role: 'Membre',
     name: 'Harold DESCAMPS',
   },  {
-    photo: president,
+    photo: team9,
     role: 'Membre',
     name: 'Pascal D’HARLINGUE',
   },  {
-    photo: president,
+    photo: team10,
     role: 'Membre',
     name: 'Anna TOMCZAK',
   },  {
-    photo: president,
+    photo: team11,
     role: 'Membre',
     name: 'Jean-Michel MYENS',
   }

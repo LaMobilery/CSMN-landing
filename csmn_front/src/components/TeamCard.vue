@@ -8,7 +8,6 @@
 </template>
 
 <script setup>
-// create photo props to receive the photo from the parent component
 const props = defineProps({
   photo: String,
   role: String,
@@ -35,6 +34,8 @@ img {
   height: 150px;
   border-radius: 50%;
   margin-bottom: 1rem;
+  object-fit: cover;
+  object-position: center;
 }
 
 span {
