@@ -57,7 +57,7 @@ span {
 }
 
 #email {
-  font-size: clamp(0.8rem, 1.5vw, 1rem);
+  font-size: clamp(0.7rem, 1.5vw, .9rem);
   font-weight: 700;
 }
 
