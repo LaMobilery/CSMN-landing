@@ -26,20 +26,38 @@ const props = defineProps({
   align-items: center;
   padding: 2rem 3rem;
   border-radius: 5px;
+  height: 300px;
+  max-width: 243px;
 }
 
 img {
   width: 150px;
   height: 150px;
   border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+span {
+  display: block;
+  width: 100%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 #role {
-  font-size: .9rem;
-  font-weight: 700;
+  font-size: clamp(0.8rem, 1.5vw, 1rem);
+  font-weight: 500;
+}
+
+#name {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-weight: 500;
 }
 
 #email {
+  font-size: clamp(0.8rem, 1.5vw, 1rem);
   font-weight: 700;
 }
 

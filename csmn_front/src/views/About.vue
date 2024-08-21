@@ -15,13 +15,14 @@
         title="Club Sous-Marin du Nord"
         :goToYoutubeChannel="goToYoutubeChannel"
       />
-        <a :href="pdfUrl" target="_blank">
-          <img :src="download" alt="bouton téléchargement">
-          {{$t('about.download')}}
-        </a>
+
+      <a :href="pdfUrl" target="_blank">
+        <img :src="download" alt="bouton téléchargement">
+        {{$t('about.download')}}
+      </a>
     </div>
   </section>
-  <div class="waves">
+  <div class="waves" :style="isSafari ? '' : '' ">
     <img :src="wave1" class="wave wave1">
     <img :src="wave2" class="wave wave2">
     <img :src="wave3" class="wave wave3">
@@ -36,38 +37,28 @@ import wave1 from '@/assets/waves/wave1.svg'
 import wave2 from '@/assets/waves/wave2.svg'
 import wave3 from '@/assets/waves/wave3.svg'
 import YoutubeButton from '@/components/YoutubeButton.vue'
+import {onMounted, ref} from 'vue'
 
 const goToYoutubeChannel = () => {
   window.open('https://www.youtube.com/@CLUBSOUS-MARINDUNORD/community', '_blank');
 }
+
+const isSafari = ref(false)
+
+
+const checkSafari = () => {
+  if (navigator.userAgent.includes('Safari') && !navigator.userAgent.includes("Chrome")) {
+    isSafari.value = true
+  }
+}
+
+onMounted(() => {
+  checkSafari()
+})
+
 </script>
 
 <style scoped>
-.logo_yt {
-  color: #fff !important;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  background-color: #263D63;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-  border-radius: 1000px;
-  margin-bottom: 1rem;
-}
-
-.logo_yt img {
-  width: 62px;
-  height: 62px;
-}
-
-.logo_yt:hover {
-  background-color: #1c2e4a;
-}
-
-.logo_yt span {
-  padding: 0 1rem;
-  border-radius: 1000px;
-}
-
 .about {
   margin-top: 3rem;
 }
