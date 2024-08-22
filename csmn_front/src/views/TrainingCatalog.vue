@@ -24,6 +24,7 @@
                         :title="card.title.toUpperCase()"
                         :subtitle="card.subtitle"
                         :text="card.text"
+                        :easterEgg="card.easterEgg"
                         :background-image="formationImages[index]"/>
         </div>
       </div>
@@ -83,6 +84,7 @@ const TrainingCards = [
     title: 'Baptême de plongée',
     subtitle: 'Osez respirer sous l’eau !',
     text: 'Plongez dans l\'aventure et explorez un monde fascinant. Une expérience inoubliable d\'émerveillement et de découverte. Les baptêmes de plongée sont organisés en soirée, la semaine à la piscine Marx Dormoy. Baptêmes ouverts à tous à partir de 12 ans. Les participants mineurs doivent présenter une autorisation parentale. Prenez simplement votre équipement de piscine et contactez-nous pour participer à l’activité.',
+    easterEgg: 'Code : BULLES',
     tag: 'discovery'
   },
   {

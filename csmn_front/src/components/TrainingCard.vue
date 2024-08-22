@@ -5,6 +5,7 @@
       <p class="title">{{ title }}</p>
       <span>{{ subtitle }}</span>
       <p>{{ text }}</p>
+      <span>{{ easterEgg }}</span>
     </div>
   </div>
 </template>
@@ -24,6 +25,10 @@ const props = defineProps({
   text: {
     type: String,
     required: true
+  },
+  easterEgg: {
+    type: String,
+    required: false
   },
   backgroundImage: {
     type: String,
