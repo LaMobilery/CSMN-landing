@@ -16,7 +16,7 @@
         :goToYoutubeChannel="goToYoutubeChannel"
       />
 
-      <a :href="pdfUrl" target="_blank">
+      <a :href="pdfUrl" target="_blank" style="margin: 1.5rem">
         <img :src="download" alt="bouton téléchargement">
         {{$t('about.download')}}
       </a>

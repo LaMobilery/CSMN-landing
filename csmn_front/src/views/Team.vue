@@ -56,6 +56,11 @@ const TeamCards = [
     email: 'tresorier@plongee-lille.fr'
   },
   {
+    photo: team10,
+    role: 'Président Adjoint',
+    name: 'Christophe QUIVRON',
+  },
+  {
     photo: team4,
     role: 'Membre',
     name: 'Nathan BAELEN',
@@ -84,11 +89,6 @@ const TeamCards = [
     photo: team9,
     role: 'Membre',
     name: 'Jean-Michel MYENS',
-  },
-  {
-    photo: team10,
-    role: 'Président Adjoint',
-    name: 'Christophe QUIVRON',
   },
   {
     photo: team11,
