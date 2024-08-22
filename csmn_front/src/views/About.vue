@@ -23,7 +23,6 @@
     </div>
   </section>
   <div class="waves">
-<!--    <div v-if="isSafari" class="safari"></div>-->
     <div class="image-wrapper">
       <img :src="wave1" class="wave wave1">
     </div>
@@ -44,24 +43,10 @@ import wave1 from '@/assets/waves/wave1.svg'
 import wave2 from '@/assets/waves/wave2.svg'
 import wave3 from '@/assets/waves/wave3.svg'
 import YoutubeButton from '@/components/YoutubeButton.vue'
-import {onMounted, ref} from 'vue'
 
 const goToYoutubeChannel = () => {
   window.open('https://www.youtube.com/@CLUBSOUS-MARINDUNORD/community', '_blank');
 }
-
-const isSafari = ref(false)
-
-const checkSafari = () => {
-  if (navigator.userAgent.includes('Safari') && !navigator.userAgent.includes("Chrome")) {
-    isSafari.value = true
-  }
-}
-
-onMounted(() => {
-  checkSafari()
-})
-
 </script>
 
 <style scoped>
