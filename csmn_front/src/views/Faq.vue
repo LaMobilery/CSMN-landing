@@ -50,6 +50,11 @@
         <h2>Partenaires</h2>
       <div class="partner-content">
           <div class="white-background">
+            <a href="https://www.salon-de-la-plongee.com/" target="_blank">
+              <img src="@/assets/images/partenaires/sdp2025.jpg" alt="logo partenaire 1" class="partner-logo">
+            </a>
+          </div>
+          <div class="white-background">
             <a href="https://ffessm.fr/" target="_blank">
               <img src="@/assets/images/partenaires/FFESSM-Logo.svg" alt="logo partenaire 1" class="partner-logo">
             </a>
