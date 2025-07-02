@@ -38,7 +38,7 @@
 <script lang="ts" setup>
 import Carousel from '@/components/Carousel.vue'
 import download from '@/assets/icons/download.svg'
-import pdfUrl from '@/assets/pdf/Dossier-Inscription-CSMN-2024-2025.pdf'
+import pdfUrl from '@/assets/pdf/Dossier-Inscription-CSMN-2025-2026.pdf'
 import wave1 from '@/assets/waves/wave1.svg'
 import wave2 from '@/assets/waves/wave2.svg'
 import wave3 from '@/assets/waves/wave3.svg'

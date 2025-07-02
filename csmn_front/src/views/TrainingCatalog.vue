@@ -118,6 +118,12 @@ const TrainingCards = [
     tag: 'management'
   },
   {
+    title: 'Moniteur Fédéral 1er degré',
+    subtitle: 'Former, guider, inspirer !',
+    text: 'Passez le MF1 et donnez un nouveau souffle à votre passion : encadrez, transmettez et vivez la plongée autrement.',
+    tag: 'management'
+  },
+  {
     title: 'GAZ',
     subtitle: 'Devenez experts des mélanges gazeux !',
     text: 'Le CSMN est l\'un des rares clubs de plongée de la région à proposer des formations Nitrox et Nitrox Confirmé.',

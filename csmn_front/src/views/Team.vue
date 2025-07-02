@@ -27,9 +27,7 @@ import TeamCard from '@/components/TeamCard.vue'
 import team1 from '@/assets/images/team/team1.png'
 import team2 from '@/assets/images/team/team2.jpeg'
 import team3 from '@/assets/images/team/team3.jpeg'
-import team4 from '@/assets/images/team/team4.jpeg'
 import team5 from '@/assets/images/team/team5.jpg'
-import team6 from '@/assets/images/team/team6.jpeg'
 import team7 from '@/assets/images/team/team7.png'
 import team8 from '@/assets/images/team/team8.jpeg'
 import team9 from '@/assets/images/team/team9.png'
@@ -61,19 +59,9 @@ const TeamCards = [
     name: 'Christophe QUIVRON',
   },
   {
-    photo: team4,
-    role: 'Membre',
-    name: 'Nathan BAELEN',
-  },
-  {
     photo: team5,
     role: 'Membre',
     name: 'Sylvie CHERRIER',
-  },
-  {
-    photo: team6,
-    role: 'Membre',
-    name: 'Harold DESCAMPS',
   },
   {
     photo: team7,
