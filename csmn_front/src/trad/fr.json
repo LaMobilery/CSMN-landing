@@ -74,13 +74,13 @@
       "q1": {
         "question": "Combien coûte l'adhésion ?",
         "answer1": "Plongée :",
-        "answer2": "Formation Niveau 1 : 183 €",
-        "answer3": "Tout autre niveau ou formation : 140 €",
-        "answer4": "Encadrant : 76 €",
+        "answer2": "Formation Niveau 1 : 190 €",
+        "answer3": "Tout autre niveau ou formation : 141 €",
+        "answer4": "Encadrant : 77 €",
         "answer5": "Réduction (non cumulable) : mineurs ou étudiant -25 ans : 30 €",
         "answer6": "Réduction (non cumulable) famille 2ème membre : 15 €",
-        "answer7": "Apnée : 80 €",
-        "answer8": "Formule piscine : 46 €"
+        "answer7": "Apnée : 90 €",
+        "answer8": "Formule piscine : 47 €"
       },
       "q2": {
         "question": "Comment se déroule la formation Niveau 1 ?",
@@ -96,7 +96,8 @@
       },
       "q4": {
         "question": "Puis-je m'inscrire en cours d'année ?",
-        "answer": "Oui, jusque fin mars."
+        "answer1": "Oui, jusque fin mars.",
+        "answer2": "Dossier à déposer au club le mardi, le jeudi ou le vendredi."
       },
       "q5": {
           "question": "Le club propose-t-il des formations passerelles ?",

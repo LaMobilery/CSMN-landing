@@ -24,9 +24,9 @@
 
 <script setup>
 import {onMounted, onUnmounted, ref} from 'vue'
-import photo1 from '@/assets/images/about/carousel1.png';
-import photo2 from '@/assets/images/about/carousel2.jpeg';
-import photo3 from '@/assets/images/about/carousel3.jpeg';
+import photo1 from '@/assets/images/about/carousel1.jpg';
+import photo2 from '@/assets/images/about/carousel2.jpg';
+import photo3 from '@/assets/images/about/carousel3.jpg';
 import photo4 from '@/assets/images/about/carousel4.jpg';
 
 const slides = ref([
