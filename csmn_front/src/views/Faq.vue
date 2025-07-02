@@ -32,7 +32,8 @@
       </AccordionItem>
       <AccordionItem :title="$t('faq.questions.q4.question')">
         <ul>
-          <li>{{ $t('faq.questions.q4.answer') }}</li>
+          <li>{{ $t('faq.questions.q4.answer1') }}</li>
+          <li>{{ $t('faq.questions.q4.answer2') }}</li>
         </ul>
       </AccordionItem>
       <AccordionItem :title="$t('faq.questions.q5.question')">
