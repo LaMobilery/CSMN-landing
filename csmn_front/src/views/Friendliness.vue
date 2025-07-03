@@ -49,8 +49,8 @@
 <script setup>
 import {ref} from 'vue'
 import photo1 from '@/assets/images/convivialite/Convivialite1.jpeg'
-import photo2 from '@/assets/images/convivialite/Convivialite2.jpeg'
-import photo3 from '@/assets/images/convivialite/Convivialite3.jpeg'
+import photo2 from '@/assets/images/convivialite/Convivialite2.jpg'
+import photo3 from '@/assets/images/convivialite/Convivialite3.jpg'
 import photo4 from '@/assets/images/convivialite/Convivialite4.jpeg'
 import wave1 from '@/assets/waves/wave7.svg'
 import wave2 from '@/assets/waves/wave8.svg'
