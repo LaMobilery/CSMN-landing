@@ -79,7 +79,7 @@ import voyage3 from '@/assets/images/voyages/Voyage3.jpg';
 import voyage4 from '@/assets/images/voyages/Voyage4.jpg';
 import voyage5 from '@/assets/images/voyages/Voyage5.jpg';
 import voyage6 from '@/assets/images/voyages/Voyage6.png';
-import voyage7 from '@/assets/images/voyages/Voyage7.jpeg';
+import voyage7 from '@/assets/images/voyages/Voyage7.jpg';
 import voyage8 from '@/assets/images/voyages/Voyage8.jpeg';
 import wave1 from '@/assets/waves/wave4.svg'
 import wave2 from '@/assets/waves/wave5.svg'
