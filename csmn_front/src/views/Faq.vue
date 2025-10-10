@@ -52,7 +52,7 @@
       <div class="partner-content">
           <div class="white-background">
             <a href="https://www.salon-de-la-plongee.com/" target="_blank">
-              <img src="@/assets/images/partenaires/sdp2025.jpg" alt="logo partenaire 1" class="partner-logo">
+              <img src="@/assets/images/partenaires/sdp2026.jpg" alt="logo partenaire 1" class="partner-logo">
             </a>
           </div>
           <div class="white-background">
