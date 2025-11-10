@@ -38,50 +38,50 @@ const TeamCards = [
   {
     photo: team1,
     role: 'Président',
-    name: 'Fabrice BELLOTTI',
+    name: 'Fabrice',
     email: 'president@plongee-lille.fr'
   },
   {
     photo: team2,
     role: 'Secrétaire',
-    name: 'Cécile CAULLERY',
+    name: 'Cécile',
     email: 'secretaire@plongee-lille.fr'
   },
   {
     photo: team3,
     role: 'Trésorier',
-    name: 'David TAQUET',
+    name: 'David',
     email: 'tresorier@plongee-lille.fr'
   },
   {
     photo: team10,
     role: 'Président Adjoint',
-    name: 'Christophe QUIVRON',
+    name: 'Christophe',
   },
   {
     photo: team5,
     role: 'Membre',
-    name: 'Sylvie CHERRIER',
+    name: 'Sylvie',
   },
   {
     photo: team7,
     role: 'Membre',
-    name: 'Bertrand DIGONNET',
+    name: 'Bertrand',
   },
   {
     photo: team8,
     role: 'Membre',
-    name: 'Pascal D’HARLINGUE',
+    name: 'Pascal',
   },
   {
     photo: team9,
     role: 'Membre',
-    name: 'Jean-Michel MYENS',
+    name: 'Jean-Michel',
   },
   {
     photo: team11,
     role: 'Membre',
-    name: 'Anna TOMCZAK',
+    name: 'Anna',
   },
 ]
 </script>
