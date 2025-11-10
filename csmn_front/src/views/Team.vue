@@ -39,19 +39,18 @@ const TeamCards = [
     photo: team1,
     role: 'Président',
     name: 'Fabrice',
-    email: 'president(at)plongee-lille(dot)fr'
+    email: 'president(at)plongee-lille.fr'
   },
   {
     photo: team2,
     role: 'Secrétaire',
     name: 'Cécile',
-    email: 'secretaire(at)plongee-lille(dot)fr'
+    email: 'secretaire(at)plongee-lille.fr'
   },
   {
     photo: team3,
     role: 'Trésorier',
     name: 'David',
-    email: 'tresorier(at)plongee-lille(dot)fr'
   },
   {
     photo: team10,
