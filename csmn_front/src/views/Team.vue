@@ -70,7 +70,7 @@ const TeamCards = [
   {
     photo: team8,
     role: 'Membre',
-    name: 'Pascal',
+    name: 'Pascale',
   },
   {
     photo: team9,
